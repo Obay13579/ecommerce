@@ -81,7 +81,15 @@ label.error {
                     </form>
                     <ul class="product-links">
                         <li>Category:</li>
-                        <li><a href="{{route('user.search')}}?c={{$product->category->id}}">{{$product->category->name}}</a></li>
+                        <li>
+                        @if($product->category)
+                            <a href="{{route('user.search')}}?c={{$product->category->id}}">
+                                {{$product->category->name}}
+                            </a>
+                        @else
+                            <span>No category</span>
+                        @endif
+                    </li>
                     </ul>
                 </div>
             </div>
