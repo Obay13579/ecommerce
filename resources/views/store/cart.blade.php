@@ -82,7 +82,7 @@ label.error {
                                                                 <!--c[1] is pid and c[3] is order serial-->
                             <div class="rTableCell">
                            <button type="button" id="sub" value={{$p->id}} data-rel={{$c[3]}} data-rel2={{$p->discount}} class="sub">-</button>   
-                        <input type="number"  id="quantity" style="width:15%" name={{$p->id}} value={{$c[1]}} min="1" max="100" readonly/>
+                        <input type="number"  id="quantity" style="width:20%" name={{$p->id}} value={{$c[1]}} min="1" max="100" readonly/>
                         <button type="button" id="add" value={{$p->id}} data-rel={{$c[3]}} data-rel2={{$p->discount}}  class="add">+</button></div>
                             
 <!--                            -->
