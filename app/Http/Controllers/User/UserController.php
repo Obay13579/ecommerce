@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\OrderRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Arr;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\Sale;
@@ -381,16 +382,17 @@ class UserController extends Controller
         $cart=[];
         $product=[];
         $id=[];
+        
         foreach($res1 as $r )
         {
-             $totalCart = explode(',',$r->product_id);
-             foreach($totalCart as $c)
-             {
-                $cart[]=array_prepend(explode(':',$c), $r->id);
-                $a=explode(':',$c);
+            $totalCart = explode(',',$r->product_id);
+            foreach($totalCart as $c)
+            {
+                $cart[] = Arr::prepend(explode(':', $c), $r->id);
+                $a = explode(':', $c);
                 $res = Product::find($a[0]);
-                $product[]=$res;
-             }
+                $product[] = $res;
+            }
         }
         $res = Product::all();
         $cat = Category::all();
