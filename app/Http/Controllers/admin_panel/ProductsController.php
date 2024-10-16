@@ -14,13 +14,12 @@ use App\Models\Category;
 
 class productsController extends Controller
 {
-   public function index()
+    public function index()
     {
-        $result = Product::all();
+        $result = Product::with('category')->get();
 
-    	return view('admin_panel.products.index')
-    		->with('prdlist', $result);
-        
+        return view('admin_panel.products.index')
+            ->with('prdlist', $result);
     }
     
      public function create()

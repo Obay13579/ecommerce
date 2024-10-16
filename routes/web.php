@@ -3,16 +3,16 @@
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
-use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\CategoriesController;
-use App\Http\Controllers\Admin\ProductsController;
-use App\Http\Controllers\Admin\ManagementController;
+use App\Http\Controllers\admin_panel\DashboardController;
+use App\Http\Controllers\admin_panel\CategoriesController;
+use App\Http\Controllers\admin_panel\ProductsController;
+use App\Http\Controllers\admin_panel\ManagementController;
 
 Route::get('admin', [LoginController::class, 'adminIndex'])->name('admin.login');
 Route::post('admin', [LoginController::class, 'adminPosted']);
 
 Route::group(['middleware' => 'admin'], function() {
-    Route::get("/admin_panel", [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin_panel', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('admin/logout', [LoginController::class, 'adminLogout'])->name('admin.logout');
     
     // Categories

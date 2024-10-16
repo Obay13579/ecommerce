@@ -10,6 +10,9 @@ use App\Models\Category;
 use App\Models\Sale;
 use App\Models\User;
 use App\Models\Address;
+
+use Illuminate\Support\Arr; // Import Arr if you're using Arr::prepend
+
 class managementController extends Controller
 {
     public function manage()
@@ -24,21 +27,21 @@ class managementController extends Controller
         
         $cart=[];
         $product=[];
-        $users=[];
-        foreach($res1 as $r )
-        {
 
-           // echo "select * from users inner join addresses on users.address_id = addresses.id where users.id = $r->user_id" .'<br>';
-            $users[] = DB::select( DB::raw("select users.id as id , users.full_name as full_name , addresses.area as area , addresses.city as city , addresses.zip as zip from users inner join addresses on users.address_id = addresses.id where users.id = $r->user_id" ) )[0];
-             //$users[]=User::find($r->user_id)->with('addresses')->get();
-             $totalCart = explode(',',$r->product_id);
-             foreach($totalCart as $c)
-             {
-                $cart[]=array_prepend(explode(':',$c), $r->id);
-                $a=explode(':',$c);
+        $userIds = array_column($res1->toArray(), 'user_id'); // Extract user IDs from $res1
+        $users = User::with('address')->whereIn('id', $userIds)->get(); // Fetch users with addresses
+
+        foreach ($res1 as $r) {
+            $totalCart = explode(',', $r->product_id);
+
+            foreach ($totalCart as $c) {
+                // Use Arr::prepend to prepend the value to the array
+                $cart[] = Arr::prepend(explode(':', $c), $r->id);
+                
+                $a = explode(':', $c);
                 $res = Product::find($a[0]);
-                $product[]=$res;
-             }
+                $product[] = $res;
+            }
         }
         //dd($users);
         //dd($users[0]->area);
@@ -73,16 +76,17 @@ class managementController extends Controller
         
         $cart=[];
         $product=[];
-        foreach($res1 as $r )
-        {
-             $totalCart = explode(',',$r->product_id);
-             foreach($totalCart as $c)
-             {
-                 $cart[]=array_prepend(explode(':',$c), $r->id);
-                $a=explode(':',$c);
+        foreach ($res1 as $r) {
+            $totalCart = explode(',', $r->product_id);
+
+            foreach ($totalCart as $c) {
+                // Use Arr::prepend to prepend the value to the array
+                $cart[] = Arr::prepend(explode(':', $c), $r->id);
+                
+                $a = explode(':', $c);
                 $res = Product::find($a[0]);
-                $product[]=$res;
-             }
+                $product[] = $res;
+            }
         }
          return redirect()->route('admin.orderManagement');
 

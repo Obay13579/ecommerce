@@ -51,16 +51,18 @@
                                 <tr>
                                 <td>{{$s->id}}</td>
                                     
-                                        @foreach($users as $u)
-                                            @if($u->id == $s->user_id)
-                                            <td>{{$u->full_name}}</td>
-                                            <td>{{$u->area}}, {{$u->city}}, {{$u->zip}} ,Bangladesh</td>
-                                            
-                                            @break
-                                            @endif
-                                        @endforeach
-
-                                   
+                                @foreach($users as $u)
+                                    @if($u->id == $s->user_id)
+                                        <td>{{$u->full_name}}</td>
+                                        <td>
+                                            {{ $u->address ? $u->address->area : '' }},
+                                            {{ $u->address ? $u->address->city : '' }},
+                                            {{ $u->address ? $u->address->zip : '' }},
+                                            Bangladesh
+                                        </td>
+                                        @break
+                                    @endif
+                                @endforeach
                                     <td>
                                        
                                         {{$p->name}}

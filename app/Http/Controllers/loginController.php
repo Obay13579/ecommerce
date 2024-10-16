@@ -7,7 +7,7 @@ use App\Http\Requests\AdminLoginVerifyRequest;
 use App\Http\Requests\UserLoginVerifyRequest;
 
 use Illuminate\Support\Facades\DB;
-use App\Admin;
+use App\Models\Admin;
 use App\Models\User;
 use App\Models\Product;
 use App\Models\Category;
