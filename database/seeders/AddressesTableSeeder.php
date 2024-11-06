@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class AddressesTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -16,41 +15,37 @@ class AddressesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('addresses')->delete();
         
         \DB::table('addresses')->insert(array (
             0 => 
             array (
                 'id' => 1,
-                'area' => '131, Dhanmondi',
-                'city' => 'Dhaka',
-                'zip' => 1229,
+                'area' => 'Jl. Sudirman No. 123',
+                'city' => 'Jakarta Selatan',
+                'zip' => 12190,
             ),
             1 => 
             array (
                 'id' => 2,
-                'area' => 'Mirpur 10',
-                'city' => 'Dhaka',
-                'zip' => 1772,
+                'area' => 'Jl. Malioboro No. 45',
+                'city' => 'Yogyakarta',
+                'zip' => 55271,
             ),
             2 => 
             array (
                 'id' => 3,
-                'area' => 'Mirpur 2',
-                'city' => 'Dhaka',
-                'zip' => 1223,
+                'area' => 'Jl. Bukit Darmo Boulevard No. 67',
+                'city' => 'Surabaya',
+                'zip' => 60226,
             ),
             3 => 
             array (
                 'id' => 4,
-                'area' => 'Uttora',
-                'city' => 'Dhaka',
-                'zip' => 1233,
+                'area' => 'Jl. Raya Kuta No. 88',
+                'city' => 'Denpasar',
+                'zip' => 80361,
             ),
         ));
-        
-        
     }
 }

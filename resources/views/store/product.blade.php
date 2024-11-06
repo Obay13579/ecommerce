@@ -48,7 +48,7 @@ label.error {
                         </div>
                     </div>
                     <div>
-                        <h3 class="product-price">IDR {{$product->discount}} <del class="product-old-price">IDR {{$product->price}}</del></h3>
+                        <h3 class="product-price">IDR {{$product->discount}}</h3>
                         <span class="product-available">In Stock</span>
                     </div>
                     <p>{!!$product->description!!}</p>
@@ -76,7 +76,7 @@ label.error {
                         <div id="for_error"></div>
 
                     <div class="add-to-cart">
-                        <button type="submit" name="myButton" id="myButton" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                        <button type="submit" name="myButton" id="myButton" class="add-to-cart-btn"><i></i> add to cart</button>
                     </div>
                     </form>
                     <ul class="product-links">

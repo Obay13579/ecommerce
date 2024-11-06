@@ -25,7 +25,7 @@ label.error {
                         <h3 class="title">User Login</h3>
                     </div>
                     <div class="form-group">
-                        <input class="input" type="email" name="email" id="email" placeholder="Email" value="john@examle.com">
+                        <input class="input" type="email" name="email" id="email" placeholder="Email" value="budi@gmail.com">
                     </div>
                     <div class="form-group">
                         <input class="input" type="password" name="pass" id="pass" placeholder="Password" value="12345">

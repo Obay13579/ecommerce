@@ -119,18 +119,6 @@ label.error {
                     @endif
                     
                 </div>
-                <div class="payment-method">
-                    <div class="input-radio">
-                        <input type="radio" name="payment" id="payment-2" checked>
-                        <label for="payment-2">
-                            <span></span>
-                            Cash On Delivery
-                        </label>
-                        <div class="caption">
-                            <p>The product Will be delivered within 24 hour of confirmation. We accept only Cash on delivery at this moment.</p>
-                        </div>
-                    </div>
-                </div>
                 @if(session('user'))
                     @if($all != null)
                    <center> <form method="post" name="cart">

@@ -26,80 +26,80 @@ class CategoriesTableSeeder extends Seeder
                 'id' => 1,
                 'name' => 'Computer',
                 'type' => 'PC, Laptop',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             1 => 
             array (
                 'id' => 2,
                 'name' => 'Smart Phone',
                 'type' => 'All smartphones',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             2 => 
             array (
                 'id' => 3,
                 'name' => 'Headphone',
                 'type' => 'All headphones',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             3 => 
             array (
                 'id' => 4,
                 'name' => 'Camera',
                 'type' => 'All cameras',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             4 => 
             array (
                 'id' => 5,
                 'name' => 'Powerbank',
                 'type' => 'All powerbanks',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             5 => 
             array (
                 'id' => 6,
                 'name' => 'Gaming',
                 'type' => 'All gaming accessories',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             6 => 
             array (
                 'id' => 7,
                 'name' => 'Tab',
                 'type' => 'All tabs',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             7 => 
             array (
                 'id' => 8,
                 'name' => 'Smartwatch',
                 'type' => 'All smartwatches',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             8 => 
             array (
                 'id' => 9,
                 'name' => 'Speaker',
                 'type' => 'All speakers',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             9 => 
             array (
                 'id' => 10,
                 'name' => 'Accessory',
                 'type' => 'All accessories',
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
         ));
         

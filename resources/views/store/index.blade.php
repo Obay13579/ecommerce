@@ -9,7 +9,7 @@
                 <!-- section title -->
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h3 class="title">New Products</h3>
+                        <h3 class="title">Products</h3>
 
                     </div>
                 </div>
@@ -27,19 +27,18 @@
                                 <div class="product-img">
                                     <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" alt="">
                                     <div class="product-label">
-                                        <span class="sale">Offer!!</span>
                                     </div>
                                 </div>
                                 <div class="product-body">
                                     <p class="product-category">{{$product->category->name ?? 'No Category'}}</p>
                                     <h3 class="product-name"><a href="{{route('user.view',['id'=>$product->id])}}">{{$product->name}}</a></h3>
-                                    <h4 class="product-price">IDR {{$product->discount}} <del class="product-old-price">IDR {{$product->price}}</del></h4>
+                                    <h4 class="product-price">IDR {{$product->discount}} </h4>
                                     <div class="product-rating">
                                     </div>
                                     
                                 </div>
                                 <div class="add-to-cart">
-                                    <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}"><i class="fa fa-shopping-cart"></i>Purchase</a>
+                                    <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}"><i></i>Purchase</a>
                                 </div>
                             </div>
                         </div>

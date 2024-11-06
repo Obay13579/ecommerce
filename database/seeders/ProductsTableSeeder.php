@@ -34,8 +34,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 205000,
                 'tag' => 'New',
                 'category_id' => 1,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             1 => 
             array (
@@ -50,8 +50,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 91000,
                 'tag' => 'New',
                 'category_id' => 1,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             2 => 
             array (
@@ -66,8 +66,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 111000,
                 'tag' => 'Hot',
                 'category_id' => 7,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             3 => 
             array (
@@ -89,8 +89,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 71000,
                 'tag' => 'New',
                 'category_id' => 2,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             4 => 
             array (
@@ -114,8 +114,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 94000,
                 'tag' => 'Hot',
                 'category_id' => 2,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             5 => 
             array (
@@ -133,8 +133,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 2290,
                 'tag' => 'Hot',
                 'category_id' => 3,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-12',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             6 => 
             array (
@@ -147,8 +147,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 101000,
                 'tag' => 'Hot',
                 'category_id' => 4,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             7 => 
             array (
@@ -161,8 +161,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 75000,
                 'tag' => 'New',
                 'category_id' => 4,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             8 => 
             array (
@@ -175,8 +175,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 30000,
                 'tag' => 'New',
                 'category_id' => 4,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             9 => 
             array (
@@ -195,8 +195,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 4300,
                 'tag' => 'Gaming',
                 'category_id' => 6,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             10 => 
             array (
@@ -209,8 +209,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 4500,
                 'tag' => 'New',
                 'category_id' => 6,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             11 => 
             array (
@@ -229,8 +229,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 1999,
                 'tag' => 'Hot',
                 'category_id' => 5,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             12 => 
             array (
@@ -249,8 +249,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 2999,
                 'tag' => 'Hot',
                 'category_id' => 5,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             13 => 
             array (
@@ -268,8 +268,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 1500,
                 'tag' => 'New',
                 'category_id' => 5,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             14 => 
             array (
@@ -289,8 +289,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 1199,
                 'tag' => 'Hot',
                 'category_id' => 5,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             15 => 
             array (
@@ -303,8 +303,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 43999,
                 'tag' => 'Hot',
                 'category_id' => 8,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-12',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             16 => 
             array (
@@ -319,8 +319,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 5999,
                 'tag' => 'New',
                 'category_id' => 8,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             17 => 
             array (
@@ -340,8 +340,8 @@ class ProductsTableSeeder extends Seeder
                 'discount' => 43000,
                 'tag' => 'Smartwatch',
                 'category_id' => 8,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-09',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             18 => 
             array (
@@ -358,8 +358,8 @@ Active 2-way crossove',
                 'discount' => 20000,
                 'tag' => 'Speaker',
                 'category_id' => 9,
-                'created_at' => '2019-02-09',
-                'updated_at' => '2019-02-12',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             19 => 
             array (
@@ -372,8 +372,8 @@ Active 2-way crossove',
                 'discount' => 45000,
                 'tag' => 'Speaker',
                 'category_id' => 9,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-12',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             20 => 
             array (
@@ -386,8 +386,8 @@ Active 2-way crossove',
                 'discount' => 30000,
                 'tag' => 'Speaker',
                 'category_id' => 9,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             21 => 
             array (
@@ -400,8 +400,8 @@ Active 2-way crossove',
                 'discount' => 24000,
                 'tag' => 'Hot',
                 'category_id' => 9,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             22 => 
             array (
@@ -414,8 +414,8 @@ Active 2-way crossove',
                 'discount' => 11000,
                 'tag' => 'Mouse',
                 'category_id' => 10,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             23 => 
             array (
@@ -436,8 +436,8 @@ Active 2-way crossove',
                 'discount' => 999,
                 'tag' => 'Mouse',
                 'category_id' => 10,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             24 => 
             array (
@@ -450,8 +450,8 @@ Active 2-way crossove',
                 'discount' => 10500,
                 'tag' => 'Keyboard',
                 'category_id' => 10,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             25 => 
             array (
@@ -464,8 +464,8 @@ Active 2-way crossove',
                 'discount' => 9500,
                 'tag' => 'Keyboard',
                 'category_id' => 10,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             26 => 
             array (
@@ -478,8 +478,8 @@ Active 2-way crossove',
                 'discount' => 245000,
                 'tag' => 'Laptop',
                 'category_id' => 1,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             27 => 
             array (
@@ -492,8 +492,8 @@ Active 2-way crossove',
                 'discount' => 224000,
                 'tag' => 'Hot',
                 'category_id' => 1,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             28 => 
             array (
@@ -506,8 +506,8 @@ Active 2-way crossove',
                 'discount' => 195000,
                 'tag' => 'Tab',
                 'category_id' => 7,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             29 => 
             array (
@@ -520,8 +520,8 @@ Active 2-way crossove',
                 'discount' => 123000,
                 'tag' => 'New',
                 'category_id' => 1,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             30 => 
             array (
@@ -534,8 +534,8 @@ Active 2-way crossove',
                 'discount' => 154500,
                 'tag' => 'Laptop',
                 'category_id' => 1,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             31 => 
             array (
@@ -555,8 +555,8 @@ Active 2-way crossove',
                 'discount' => 48000,
                 'tag' => 'Hot',
                 'category_id' => 2,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             32 => 
             array (
@@ -576,8 +576,8 @@ Active 2-way crossove',
                 'discount' => 13900,
                 'tag' => 'Hot',
                 'category_id' => 3,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             33 => 
             array (
@@ -599,8 +599,8 @@ Active 2-way crossove',
                 'discount' => 9100,
                 'tag' => 'Speaker',
                 'category_id' => 3,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
             34 => 
             array (
@@ -617,22 +617,8 @@ Brand Sony',
                 'discount' => 3500,
                 'tag' => 'Gaming',
                 'category_id' => 6,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
-            ),
-            35 => 
-            array (
-                'id' => 45,
-                'name' => 'Huawei MediaPad T3',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - Huawei MediaPad T3 10<br />Processor Type - Qualcomm MSM8917 Quad Core A53<br />RAM - 2GB<br />Processor Speed - 1.4GHz<br />Internal Memory - 16GB ROM<br />Display Type - IPS display<br />Display Size - 9.6"<br />Screen Resolution - 1280 x 800</p>',
-                'colors' => '#000000',
-                'price' => 19900,
-                'discount' => 18900,
-                'tag' => 'New',
-                'category_id' => 7,
-                'created_at' => '2019-02-10',
-                'updated_at' => '2019-02-10',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
             ),
         ));
         

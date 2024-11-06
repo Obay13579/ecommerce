@@ -64,8 +64,8 @@
             <div class="container">
                 <ul id="head_links" class="header-links pull-left">
                     <li><a href="#"><i class="fa fa-phone"></i> +62-1234-5678-90</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o"></i> ivanwibu@pedo.com</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i> Mie Agam Bangladesh</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i> majusinipbkk@waw.com</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i>Hartono Merr</a></li>
                 </ul>
                 <ul class="header-links pull-right">
                     @if(session()->has('user'))
@@ -123,14 +123,6 @@
 
                             </div>
                             <!-- /Cart -->
-
-                            <!-- Menu Toogle -->
-                            <div class="menu-toggle pull-right">
-                                <a href="#">
-                                    <i class="fa fa-bars"></i>
-                                    <span>Menu</span>
-                                </a>
-                            </div>
                             <!-- /Menu Toogle -->
                         </div>
                     </div>
@@ -157,12 +149,10 @@
                         @foreach($cat as $c)
                         <li class="{{$c->id == $a ? 'active' : ''}}"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
                         @endforeach
-                        <li class="{{$a == -1  ? 'active' : ''}}"><a href="search">Browse All</a></li>
                     @else
                     @foreach($categories as $category)
                         <li ><a href="{{ route('user.search.cat', $category->id) }}">{{ $category->name }}</a></li>
                     @endforeach
-                        <li ><a href="{{route('user.search')}}">Browse All</a></li>
                     @endif
                     
                 </ul>
@@ -192,17 +182,6 @@
                 break;
                
                 @endphp
-                <div class="col-md-4 col-xs-6">
-                    <div class="shop">
-                        <div class="shop-img">
-                            <img src="./img/shop0{{$index++}}.png" alt="">
-                        </div>
-                        <div class="shop-body">
-                            <h3>{{$c->name}}</h3>
-                            <a href="search?c={{$c->id}}" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
                 <!-- /shop -->
                 @endforeach
             </div>
@@ -218,41 +197,6 @@
 
     <!-- /SECTION -->
     
-    <div id="newsletter" class="section">
-        <!-- container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="newsletter">
-                        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
-                        <form>
-                            <input class="input" type="email" placeholder="Enter Your Email">
-                            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-                        </form>
-                        <ul class="newsletter-follow">
-                            <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </div>
-    <!-- /NEWSLETTER -->
-
     <!-- FOOTER -->
     <footer id="footer" >
         <!-- top footer -->
@@ -320,28 +264,6 @@
             <!-- /container -->
         </div>
         <!-- /top footer -->
-
-        <!-- bottom footer -->
-        <div id="bottom-footer" class="section">
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <ul class="footer-payments">
-                            <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-                            <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /row -->
-            </div>
-            <!-- /container -->
-        </div>
-        <!-- /bottom footer -->
     </footer>
     <!-- /FOOTER -->
 

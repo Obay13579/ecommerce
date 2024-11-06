@@ -58,7 +58,7 @@
                                             {{ $u->address ? $u->address->area : '' }},
                                             {{ $u->address ? $u->address->city : '' }},
                                             {{ $u->address ? $u->address->zip : '' }},
-                                            Bangladesh
+                                            Indonesia
                                         </td>
                                         @break
                                     @endif

@@ -19,8 +19,6 @@
                                 <!-- Use the asset() helper to generate the image path -->
                                 <img src="{{ asset('uploads/products/' . $product->id . '/' . $product->image_name) }}" alt="">
                                 <div class="product-label">
-                                    <span class="sale">offer</span>
-                                    <span class="new">{{ $product->tag }}</span>
                                 </div>
                             </div>
                             <div class="product-body">
@@ -29,20 +27,12 @@
                                 </h3>
                                 <h4 class="product-price">
                                     IDR {{ $product->discount }} 
-                                    <del class="product-old-price">IDR {{ $product->price }}</del>
                                 </h4>
-                                <div class="product-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
                             </div>
                             <div class="add-to-cart">
                                 <!-- Link to view the product details -->
                                 <a class="add-to-cart-btn" href="{{ route('user.view', ['id' => $product->id]) }}">
-                                    <i class="fa fa-shopping-cart"></i> Purchase
+                                    <i></i> Purchase
                                 </a>
                             </div>
                         </div>
