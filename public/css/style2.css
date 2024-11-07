@@ -451,14 +451,6 @@ textarea.input {
   background-color: #15161D;
 }
 
-.header-logo {
-  float: left;
-}
-
-.header-logo .logo img {
-  display: block;
-}
-
 /*----------------------------*\
 	Search
 \*----------------------------*/
@@ -620,6 +612,34 @@ textarea.input {
 /*=========================================================
 	03 -> Navigation
 ===========================================================*/
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header-logo .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-logo .logo p {
+  margin: 0;
+  margin-top: 7px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: #D10024; /* Default color - red */
+  transition: color 0.2s; /* Smooth transition for color change */
+}
+
+.header-logo .logo:hover p {
+  color: #ffffff; /* Color on hover - dark gray/black */
+}
 
 #navigation {
   background: #FFF;
@@ -2141,12 +2161,28 @@ textarea.input {
     margin-top: 5px;
   }
   .header-logo {
-    float: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Increased height for better visibility */
   }
+
   .header-logo .logo {
-    display: inline-block;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
   }
+
+  .header-logo .logo p {
+      margin: 0;
+      font-size: 36px; /* Increased font size */
+      font-weight: bold;
+      color: inherit;
+      text-align: center;
+      width: 100%;
+  }
+
+
   #product-imgs {
     margin-bottom: 60px;
     margin-top: 15px;

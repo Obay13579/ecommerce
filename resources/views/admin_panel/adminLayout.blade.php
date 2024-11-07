@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <!-- endinject -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="{{asset('favicon.png')}}" />
 </head>
 
 <body>
@@ -27,10 +26,10 @@
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
                 <a class="navbar-brand brand-logo" href="{{route('admin.dashboard')}}">
-                    <div style="color: #007bff;">Electro</div>
+                    <div style="color: #007bff;">Tech Up</div>
                 </a>
                 <a class="navbar-brand brand-logo-mini" href="{{route('admin.dashboard')}}">
-                    <div style="color: #007bff;">Electro</div>
+                    <div style="color: #007bff;">Tech Up</div>
                 </a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
