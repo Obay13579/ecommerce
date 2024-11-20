@@ -24,85 +24,60 @@ class CategoriesTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-                'name' => 'Computer',
-                'type' => 'PC, Laptop',
+                'name' => 'Headset',
+                'type' => 'Headset',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             1 => 
             array (
                 'id' => 2,
-                'name' => 'Smart Phone',
-                'type' => 'All smartphones',
+                'name' => 'Mouse',
+                'type' => 'Mouse',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             2 => 
             array (
                 'id' => 3,
-                'name' => 'Headphone',
-                'type' => 'All headphones',
+                'name' => 'Monitor',
+                'type' => 'Monitor',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             3 => 
             array (
                 'id' => 4,
-                'name' => 'Camera',
-                'type' => 'All cameras',
+                'name' => 'Gamepad',
+                'type' => 'Gamepad',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             4 => 
             array (
                 'id' => 5,
-                'name' => 'Powerbank',
-                'type' => 'All powerbanks',
+                'name' => 'Flashdisk',
+                'type' => 'Flashdisk',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             5 => 
             array (
                 'id' => 6,
-                'name' => 'Gaming',
-                'type' => 'All gaming accessories',
+                'name' => 'Speaker',
+                'type' => 'Speaker',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             6 => 
             array (
                 'id' => 7,
-                'name' => 'Tab',
-                'type' => 'All tabs',
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            7 => 
-            array (
-                'id' => 8,
-                'name' => 'Smartwatch',
-                'type' => 'All smartwatches',
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            8 => 
-            array (
-                'id' => 9,
-                'name' => 'Speaker',
-                'type' => 'All speakers',
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            9 => 
-            array (
-                'id' => 10,
-                'name' => 'Accessory',
-                'type' => 'All accessories',
+                'name' => 'Powerbank',
+                'type' => 'Powerbank',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
         ));
-        
         
     }
 }

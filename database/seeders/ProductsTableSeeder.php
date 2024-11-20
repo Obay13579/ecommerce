@@ -24,30 +24,40 @@ class ProductsTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-            'name' => 'Apple MacBook Pro (2018)',
+                'name' => 'HyperX Cloud II Gaming Headset',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
-<p>Processor - Six Core Intel Core i7<br />Processor Clock Speed - 2.2-4.1GHz<br />Display Size - 15.4"<br />RAM - 16GB<br />RAM Type - DDR4 2400MHz (Onboard)<br />Storage - 256GB SSD</p>
-</div>',
-                'colors' => '#c0c0c0',
-                'price' => 214200,
-                'discount' => 205000,
-                'tag' => 'New',
+        <p>Driver: 53mm Neodymium Magnets<br>
+        Frequency Response: 15Hz–25,000 Hz<br>
+        Connection Type: USB/3.5mm<br>
+        Microphone: Detachable<br>
+        Features: 7.1 Virtual Surround Sound<br>
+        Weight: 309g</p>
+        </div>',
+                'colors' => '#ff0000,#000000',
+                'price' => 129900,
+                'discount' => 119900,
+                'tag' => 'Hot',
                 'category_id' => 1,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             1 => 
             array (
-                'id' => 3,
-                'name' => 'HP Probook X360 440 G1',
+                'id' => 2,
+                'name' => 'Razer BlackShark V2 Pro',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
-<p>Generation - 8th Gen<br />Processor - Intel Core i7 8550U<br />Processor Clock Speed - 1.80-4.0GHz<br />Display Size - 14"<br />RAM - 8GB<br />RAM Type - DDR4<br />Storage - 512GB SSD<br />Operating System - Free Dos</p>
-</div>',
+        <p>Driver: Razer™ TriForce Titanium 50mm<br>
+        Frequency Response: 12 Hz – 28 kHz<br>
+        Connection: Wireless 2.4GHz<br>
+        Battery Life: Up to 24 hours<br>
+        Features: THX Spatial Audio<br>
+        Weight: 320g</p>
+        </div>',
                 'colors' => '#000000',
-                'price' => 94920,
-                'discount' => 91000,
+                'price' => 199900,
+                'discount' => 179900,
                 'tag' => 'New',
                 'category_id' => 1,
                 'created_at' => '2024-11-06',
@@ -55,573 +65,610 @@ class ProductsTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => 4,
-                'name' => 'Apple iPad Pro',
+                'id' => 3,
+                'name' => 'SteelSeries Arctis 7+',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
-<p>Model - Apple iPad Pro 11 Inch WiFi+Cellular<br />Processor Type - A12X Bionic chip<br />Internal Memory - 256GB<br />Display Type - Liquid Retina display<br />Display Size - 11"<br />Screen Resolution - 2388 x 1668<br />Connectivity - Wi-Fi, Bluetooth 5.0, USB, GPS</p>
-</div>',
-                'colors' => '#c0c0c0',
-                'price' => 115500,
-                'discount' => 111000,
+        <p>Driver: 40mm Neodymium<br>
+        Frequency Response: 20–20000 Hz<br>
+        Connection: USB-C Wireless<br>
+        Battery Life: 30 hours<br>
+        Features: 360° Spatial Audio<br>
+        Weight: 354g</p>
+        </div>',
+                'colors' => '#ffffff,#000000',
+                'price' => 169900,
+                'discount' => 159900,
                 'tag' => 'Hot',
-                'category_id' => 7,
+                'category_id' => 1,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             3 => 
             array (
-                'id' => 5,
-            'name' => 'Google Pixel 3 (64 GB)',
+                'id' => 4,
+                'name' => 'Logitech G Pro X',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
-<ul class="i8Z77e">
-<li class="TrT0Xe">Processor: Qualcomm Snapdragon 845 2.5 GHz quad-core.</li>
-<li class="TrT0Xe">Display: 5.5 inch, 2160x1080-pixel</li>
-<li class="TrT0Xe">Operating system: Android 9 Pie.</li>
-<li class="TrT0Xe">RAM: 4GB LPDDR4.</li>
-<li class="TrT0Xe">Storage: 64GB internal.</li>
-<li class="TrT0Xe">Cameras: 12.2-megapixel rear f/1.8 dual-pixel</li>
-</ul>
-</div>',
-                'colors' => '#ff80ff,#c0c0c0,#000000',
-                'price' => 71900,
-                'discount' => 71000,
+        <p>Driver: PRO-G 50mm<br>
+        Frequency Response: 20Hz-20KHz<br>
+        Connection: USB/3.5mm<br>
+        Features: Blue VO!CE microphone technology<br>
+        DTS Headphone:X 2.0<br>
+        Weight: 320g</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 129900,
+                'discount' => 119900,
                 'tag' => 'New',
-                'category_id' => 2,
+                'category_id' => 1,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             4 => 
             array (
-                'id' => 6,
-                'name' => 'Samsung Galaxy Note 9',
+                'id' => 5,
+                'name' => 'Corsair HS80 RGB WIRELESS',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
-<ul class="i8Z77e">
-<li class="TrT0Xe">CPU: Qualcomm Snapdragon 845.</li>
-<li class="TrT0Xe">Memory: 6/8GB.</li>
-<li class="TrT0Xe">Storage: 128.</li>
-<li class="TrT0Xe">MicroSD storage: Up to 512GB.</li>
-<li class="TrT0Xe">Screen size: 6.4 inches.</li>
-<li class="TrT0Xe">Resolution: 2960 x 1440.</li>
-<li class="TrT0Xe">Connectivity: Bluetooth 5, NFC.</li>
-<li class="TrT0Xe">Battery: 4,000mAh</li>
-</ul>
-</div>',
-                'colors' => '#0080c0,#000000,#804040',
-                'price' => 95000,
-                'discount' => 94000,
+        <p>Driver: 50mm Neodymium<br>
+        Frequency Response: 20Hz - 40kHz<br>
+        Connection: SLIPSTREAM WIRELESS<br>
+        Battery Life: Up to 20 hours<br>
+        Features: Dolby Atmos Spatial Audio<br>
+        Weight: 367g</p>
+        </div>',
+                'colors' => '#000000,#ffffff',
+                'price' => 149900,
+                'discount' => 139900,
                 'tag' => 'Hot',
-                'category_id' => 2,
+                'category_id' => 1,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
             5 => 
             array (
-                'id' => 8,
-                'name' => 'A4tech Bloody G437',
+                'id' => 6,
+                'name' => 'Logitech G Pro X Superlight',
                 'image_name' => '1.jpg',
-                'description' => '<ul class="i8Z77e">
-<li>Driver Unit: 40 mm Neodymium Magnet</li>
-<li>Frequency Response: 20-20000 Hz</li>
-<li>Sensitivity: 100 dB</li>
-<li>Impedance: 32 ohm</li>
-</ul>',
-                'colors' => '#000000',
-                'price' => 3000,
-                'discount' => 2290,
-                'tag' => 'Hot',
-                'category_id' => 3,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            6 => 
-            array (
-                'id' => 11,
-                'name' => 'Canon EOS 6D Mark II',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - Canon 6D Mark II<br />Mega Pixels - 26.2 Megapixels<br />Lens Mount - Canon EF Lens<br />Processor - DIGIC 7<br />Sensor Type - CMOS Senso</p>',
-                'colors' => '#000000',
-                'price' => 105530,
-                'discount' => 101000,
-                'tag' => 'Hot',
-                'category_id' => 4,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            7 => 
-            array (
-                'id' => 12,
-                'name' => 'Nikon D7200 Camera',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - Nikon D7200<br />Effective Pixels - 24.2 Megapixels<br />Lens Mount - AF-S 18-140mm<br />Processor - Expeed 4<br />Sensor Type - CMOS Sensor<br />Screen Type - TFT LCD<br />Screen Size - 3.2"</p>',
-                'colors' => '#000000',
-                'price' => 78850,
-                'discount' => 75000,
-                'tag' => 'New',
-                'category_id' => 4,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            8 => 
-            array (
-                'id' => 15,
-                'name' => 'Canon PowerShot SX730',
-                'image_name' => '1.jpg',
-            'description' => '<p>Model - Canon PowerShot SX730 HS<br />Resolution (MP) - 20.3 Mega pixels<br />Display (Inch) - 3" TFT Color LCD Display<br />Optical Zoom (X) - 40x<br />Battery - NB-13L Battery</p>',
-                'colors' => '#000000',
-                'price' => 31500,
-                'discount' => 30000,
-                'tag' => 'New',
-                'category_id' => 4,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            9 => 
-            array (
-                'id' => 16,
-                'name' => 'Microsoft Xbox One',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Seamless profile and controller pairing</li>
-<li>Responsive thumbsticks</li>
-<li>Triggers and bumpers are designed for quick access</li>
-<li>Menu and View buttons quick for easy navigation</li>
-<li>Remap buttons through the Xbox Accessories App</li>
-</ul>',
-                'colors' => '#000000',
-                'price' => 5100,
-                'discount' => 4300,
-                'tag' => 'Gaming',
-                'category_id' => 6,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            10 => 
-            array (
-                'id' => 17,
-                'name' => 'Logitech Wireless F710',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - Logitech F710<br />Type - Gamepad</p>',
-                'colors' => '#004080,#c0c0c0',
-                'price' => 5000,
-                'discount' => 4500,
-                'tag' => 'New',
-                'category_id' => 6,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            11 => 
-            array (
-                'id' => 18,
-                'name' => 'ADATA 20100 mAh',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Battery type: Rechargeable Lithium-ion battery</li>
-<li>Special features: Dual USB ports</li>
-<li>Other features: 20100 mAh. LED Flashlight</li>
-<li>Input: DC 5V/2A</li>
-<li>Output: DC 5V/2.1A max</li>
-</ul>',
-                'colors' => '#000000',
-                'price' => 2500,
-                'discount' => 1999,
-                'tag' => 'Hot',
-                'category_id' => 5,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            12 => 
-            array (
-                'id' => 19,
-                'name' => 'Joyroom ZHI 10000 mAh',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Input：5V 2A</li>
-<li>Output：5V 2.1A</li>
-<li>Power: 10000 mAh</li>
-<li>Digital Display</li>
-<li>LED Lighting</li>
-</ul>',
-                'colors' => '#0000ff,#000000',
-                'price' => 3300,
-                'discount' => 2999,
-                'tag' => 'Hot',
-                'category_id' => 5,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            13 => 
-            array (
-                'id' => 20,
-                'name' => 'Astrum 10000mAh',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Battery: 10000mAh capacity li-polymer</li>
-<li>Connectors: 2 x USB Port</li>
-<li>Ouput: 1 - 5V 1A / 2 - 5V 2.1A</li>
-<li>Input: 5V 2A</li>
-</ul>',
-                'colors' => '#000000',
-                'price' => 1500,
-                'discount' => 1500,
-                'tag' => 'New',
-                'category_id' => 5,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            14 => 
-            array (
-                'id' => 21,
-                'name' => 'Mi 10000 mAh v2',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li><span class="a-list-item">10000mAH lithium-polymer battery</span></li>
-<li><span class="a-list-item">Dual USB Output, Two- way Quick Charge</span></li>
-<li><span class="a-list-item">Material: Aluminium Alloy + CNC Edge</span></li>
-<li class="" data-spm-anchor-id="a2a0e.pdp.product_detail.i0.4bd16c33R4IjnQ">Temperature Resistance</li>
-<li class="" data-spm-anchor-id="a2a0e.pdp.product_detail.i1.4bd16c33R4IjnQ">Protection from Short Circuit</li>
-<li class="" data-spm-anchor-id="a2a0e.pdp.product_detail.i2.4bd16c33R4IjnQ">Reset Mechanism</li>
-</ul>',
-                'colors' => '#000000,#808080',
-                'price' => 1300,
-                'discount' => 1199,
-                'tag' => 'Hot',
-                'category_id' => 5,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            15 => 
-            array (
-                'id' => 22,
-                'name' => 'Apple Watch Series 4',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - Apple Watch Series 4<br />Watch Dimension - 40 x 34 x 10.7mm<br />Display Size - 1.57"<br />Connectivity - WiFi, Bluetooth, GPS</p>',
-                'colors' => '#000000',
-                'price' => 44300,
-                'discount' => 43999,
-                'tag' => 'Hot',
-                'category_id' => 8,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            16 => 
-            array (
-                'id' => 23,
-                'name' => 'Mi Amazfit Bip',
-                'image_name' => '1.jpg',
-                'description' => '<div class="short-description">
-<div class="std">Model - Mi Amazfit Bip<br />Display Size - 1.28"<br />Connectivity - WiFi, Bluetooth, GPS</div>
-</div>',
-                'colors' => '#000000',
-                'price' => 6100,
-                'discount' => 5999,
-                'tag' => 'New',
-                'category_id' => 8,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            17 => 
-            array (
-                'id' => 24,
-                'name' => 'Garmin fenix 5 Sapphire',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Display: 1.2&rdquo; (240 x 240)</li>
-<li>Display type: Sunlight-visible, transflective memory-in-pixel (MIP)</li>
-<li>Memory: 64MB</li>
-<li>Lens Material: chemically strengthened glass or sapphire crystal</li>
-<li>Bezel Material: Stainless steel</li>
-<li>Strap material: silicone</li>
-</ul>',
-                'colors' => '#000000',
-                'price' => 45000,
-                'discount' => 43000,
-                'tag' => 'Smartwatch',
-                'category_id' => 8,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            18 => 
-            array (
-                'id' => 25,
-                'name' => 'Beats PILL Plus',
-                'image_name' => '1.jpg',
-                'description' => 'SKU: RAMBPSHSP
-
-Brand: Beats
-
-Active 2-way crossove',
-                'colors' => '#000000,#ff0000,#c0c0c0',
-                'price' => 21000,
-                'discount' => 20000,
-                'tag' => 'Speaker',
-                'category_id' => 9,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            19 => 
-            array (
-                'id' => 26,
-                'name' => 'JBL Omni 50+',
-                'image_name' => '1.jpg',
-                'description' => '<p>&lt;h2&gt;Model - JBL by Harman/Kardon Omni 50+&lt;br /&gt;Type - Wireless HD Indoor/Outdoor Speaker with Rechargeable Battery&lt;/h2&gt;</p>',
-                'colors' => '#000000',
-                'price' => 46730,
-                'discount' => 45000,
-                'tag' => 'Speaker',
-                'category_id' => 9,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            20 => 
-            array (
-                'id' => 27,
-                'name' => 'Edifier S350DB 2.1',
-                'image_name' => '1.jpg',
-            'description' => '<p>Model - Edifier S350DB<br />Type - Modern Powered Bluetooth Bookshelf Speaker<br />Channel - 2.1<br />RMS/Channel (Watt) - 15Watt x 2 (Treble) + 25Watt x 2 (midrange and bass)<br />RMS/Subwoofer (Watt) - 70Watt</p>',
-                'colors' => '#000000',
-                'price' => 31500,
-                'discount' => 30000,
-                'tag' => 'Speaker',
-                'category_id' => 9,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            21 => 
-            array (
-                'id' => 28,
-                'name' => 'JBL Xtreme 2 Portable',
-                'image_name' => '1.jpg',
-            'description' => '<p>Model - JBL Xtreme 2<br />Type - Portable Bluetooth Speaker<br />Lithium-ion Polymer 36Wh (Equivalent to 3.7V 10000mAh)<br />Wirelessly connect<br />2 smartphones or tablets<br />charges device via an USB port</p>',
-                'colors' => '#400080',
-                'price' => 25400,
-                'discount' => 24000,
-                'tag' => 'Hot',
-                'category_id' => 9,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            22 => 
-            array (
-                'id' => 30,
-                'name' => 'APPLE Magic Mouse 2',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - APPLE Magic Mouse 2<br />Type - Magic Mouse<br />Connectivity - Wireless<br />Rechargable</p>',
-                'colors' => '#000000',
-                'price' => 11050,
-                'discount' => 11000,
-                'tag' => 'Mouse',
-                'category_id' => 10,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            23 => 
-            array (
-                'id' => 31,
-                'name' => 'Rapoo 3600 Silent',
-                'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Connection: 2.4GHz Wireless</li>
-<li>Tracking method: Optical</li>
-<li>Keys amount: 3&nbsp;</li>
-<li>Keys travel: 0.8mm</li>
-<li>Acceleration: 20G</li>
-<li>Resolution: 1000DPI</li>
-<li>Voltage: 1.5V</li>
-</ul>',
-                'colors' => '#000000',
-                'price' => 1050,
-                'discount' => 999,
-                'tag' => 'Mouse',
-                'category_id' => 10,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            24 => 
-            array (
-                'id' => 34,
-                'name' => 'Corsair STRAFE Mechanical',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - Corsair STRAFE Mechanical<br />Type - RED LED Backlight Gaming Keyboard<br />Interface - USB</p>',
-                'colors' => '#ff0000',
-                'price' => 11000,
-                'discount' => 10500,
-                'tag' => 'Keyboard',
-                'category_id' => 10,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            25 => 
-            array (
-                'id' => 35,
-                'name' => 'APPLE MAGIC KEYBOARD',
-                'image_name' => '1.jpg',
-            'description' => 'APPLE MAGIC KEYBOARD (MLA22ZA/A, MLA22LL/A)',
-                'colors' => '#c0c0c0',
-                'price' => 9700,
-                'discount' => 9500,
-                'tag' => 'Keyboard',
-                'category_id' => 10,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            26 => 
-            array (
-                'id' => 36,
-                'name' => 'MSI GT75VR 7RE TITAN',
-                'image_name' => '1.jpg',
-                'description' => '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7820HK<br />Processor Clock Speed - 2.90-3.90GHz<br />Display Size - 17.3"<br />RAM - 32GB<br />RAM Type - DDR4 2400MHz<br />Storage - 1TB HDD + 256GB NVMe SSD</p>',
-                'colors' => '#808080',
-                'price' => 254630,
-                'discount' => 245000,
-                'tag' => 'Laptop',
-                'category_id' => 1,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            27 => 
-            array (
-                'id' => 37,
-            'name' => 'Asus ROG G752VS(KBL)',
-                'image_name' => '1.jpg',
-                'description' => '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7700HQ<br />Processor Clock Speed - 2.80GHz<br />Display Size - 17.3"<br />RAM - 32GB<br />RAM Type - DDR4<br />HDD - 2TBHDD+512GB SSD<br />Operating System - Endless</p>',
-                'colors' => '#808080',
-                'price' => 231420,
-                'discount' => 224000,
-                'tag' => 'Hot',
-                'category_id' => 1,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            28 => 
-            array (
-                'id' => 38,
-                'name' => 'Microsoft Surface Pro',
-                'image_name' => '1.jpg',
-                'description' => '<p>Generation - 8th Gen<br />Processor - Intel Core i7 8650U<br />Processor Clock Speed - 1.90-4.20GHz<br />Display Size - 12.3"<br />RAM - 16GB<br />Storage - 512GB SSD<br />Operating System - Windows 10 Home</p>',
-                'colors' => '#c0c0c0,#8080ff',
-                'price' => 202650,
-                'discount' => 195000,
-                'tag' => 'Tab',
-                'category_id' => 7,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            29 => 
-            array (
-                'id' => 39,
-                'name' => 'HP Spectre 13-V113TU',
-                'image_name' => '1.jpg',
-                'description' => '<p>Model - HP Spectre 13-V113TU<br />Processor - Intel Core i5 7200U<br />Generation - 7th Gen<br />Processor Clock Speed - 2.50-3.10GHz<br />Display Size - 13.3"<br />RAM - 8GB<br />RAM Type - LPDDR3 1866 On-Board</p>',
-                'colors' => '#000000',
-                'price' => 126300,
-                'discount' => 123000,
-                'tag' => 'New',
-                'category_id' => 1,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            30 => 
-            array (
-                'id' => 40,
-                'name' => 'Asus GL503VM Core i7',
-                'image_name' => '1.jpg',
-                'description' => '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7700HQ<br />Processor Clock Speed - 2.80GHz<br />Display Size - 15.6"<br />RAM - 16GB<br />RAM Type - DDR4</p>',
-                'colors' => '#000000',
-                'price' => 157920,
-                'discount' => 154500,
-                'tag' => 'Laptop',
-                'category_id' => 1,
-                'created_at' => '2024-11-06',
-                'updated_at' => '2024-11-06',
-            ),
-            31 => 
-            array (
-                'id' => 41,
-                'name' => 'asus zenfone 5z',
-                'image_name' => '1.jpg',
-                'description' => '<p>Dimensions 153 x 75.7 x 7.9 mm</p>
-<p>Weight 155 g (5.47 oz)</p>
-<p>Hybrid Dual SIM</p>
-<p>DISPLAY Type IPS LCD</p>
-<p>Resolution 1080 x 2246 pixels,</p>
-<p>18.7:9 ratio (~402 ppi density) OS Android 8.0 (Oreo)</p>
-<p>Chipset Qualcomm SDM845 Snapdragon 845</p>
-<p>GPU Adreno 630</p>',
-                'colors' => '#000000,#c0c0c0',
-                'price' => 49000,
-                'discount' => 48000,
+                'description' => '<div class="ng-scope">
+        <p>Sensor: HERO 25K<br>
+        DPI: 25,600<br>
+        Buttons: 5 Programmable<br>
+        Connection: LIGHTSPEED Wireless<br>
+        Battery Life: Up to 70 hours<br>
+        Weight: 63g</p>
+        </div>',
+                'colors' => '#ffffff,#000000,#ff69b4',
+                'price' => 149900,
+                'discount' => 139900,
                 'tag' => 'Hot',
                 'category_id' => 2,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
-            32 => 
+            6 => 
             array (
-                'id' => 42,
-                'name' => 'Skullcandy Over-Ear',
+                'id' => 7,
+                'name' => 'Razer DeathAdder V3 Pro',
                 'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Type: Over-Ear</li>
-<li>Connection Type: Bluetooth&reg; or Wired</li>
-<li>Battery Life: Up to 40 Hours</li>
-<li>Rapid Charge: 10 Min = 3 Hours of Play</li>
-<li>Noise Isolation: Passive</li>
-<li>Driver Size: 40mm</li>
-</ul>',
+                'description' => '<div class="ng-scope">
+        <p>Sensor: Focus Pro 30K Optical<br>
+        DPI: 30,000<br>
+        Buttons: 5 Programmable<br>
+        Connection: HyperSpeed Wireless<br>
+        Battery Life: Up to 90 hours<br>
+        Weight: 63g</p>
+        </div>',
+                'colors' => '#ffffff,#000000',
+                'price' => 159900,
+                'discount' => 149900,
+                'tag' => 'New',
+                'category_id' => 2,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'name' => 'SteelSeries Prime Wireless',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Sensor: TrueMove Air<br>
+        DPI: 18,000<br>
+        Buttons: 6 Programmable<br>
+        Connection: Quantum 2.0 Wireless<br>
+        Battery Life: Up to 100 hours<br>
+        Weight: 80g</p>
+        </div>',
                 'colors' => '#000000',
-                'price' => 14000,
-                'discount' => 13900,
+                'price' => 129900,
+                'discount' => 119900,
+                'tag' => 'Hot',
+                'category_id' => 2,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'name' => 'Zowie EC2-C',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Sensor: 3360<br>
+        DPI: 400/800/1600/3200<br>
+        Buttons: 5<br>
+        Connection: Wired USB<br>
+        Polling Rate: 1000Hz<br>
+        Weight: 73g</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 79900,
+                'discount' => 74900,
+                'tag' => 'New',
+                'category_id' => 2,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'Glorious Model O Wireless',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Sensor: BAMF<br>
+        DPI: 19,000<br>
+        Buttons: 6 Programmable<br>
+        Connection: 2.4GHz Wireless<br>
+        Battery Life: Up to 71 hours<br>
+        Weight: 69g</p>
+        </div>',
+                'colors' => '#ffffff,#000000',
+                'price' => 89900,
+                'discount' => 79900,
+                'tag' => 'Hot',
+                'category_id' => 2,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'name' => 'LG 27GP850-B UltraGear',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Size: 27"<br>
+        Resolution: 2560 x 1440 (QHD)<br>
+        Panel: Nano IPS<br>
+        Refresh Rate: 165Hz (OC 180Hz)<br>
+        Response Time: 1ms GtG<br>
+        HDR: VESA DisplayHDR 400</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 499900,
+                'discount' => 469900,
                 'tag' => 'Hot',
                 'category_id' => 3,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
-            33 => 
+            11 => 
             array (
-                'id' => 43,
-                'name' => 'Microlab Outlander',
+                'id' => 12,
+                'name' => 'ASUS ROG Swift PG279QM',
                 'image_name' => '1.jpg',
-                'description' => '<ul>
-<li>Bluetooth Profiles: HSP, HFP, A2DP, AVRCP</li>
-<li>Frequency Response: 20 Hz - 20 kHz&nbsp;&nbsp;</li>
-<li>Sound pressure level: 115 &plusmn; 3 dB</li>
-<li>Impedance: 32 &Omega;</li>
-<li>Wireless Range: 10m</li>
-<li>Talk Time: 22H</li>
-<li>Standby Time: 900 hours</li>
-<li>Music Play Time: 20 hours</li>
-</ul>',
+                'description' => '<div class="ng-scope">
+        <p>Size: 27"<br>
+        Resolution: 2560 x 1440 (QHD)<br>
+        Panel: Fast IPS<br>
+        Refresh Rate: 240Hz<br>
+        Response Time: 1ms GtG<br>
+        HDR: DisplayHDR 400</p>
+        </div>',
                 'colors' => '#000000',
-                'price' => 9200,
-                'discount' => 9100,
-                'tag' => 'Speaker',
+                'price' => 799900,
+                'discount' => 749900,
+                'tag' => 'New',
                 'category_id' => 3,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
-            34 => 
+            12 => 
             array (
-                'id' => 44,
-                'name' => 'DualShock 4 Wireless',
+                'id' => 13,
+                'name' => 'Samsung Odyssey G7',
                 'image_name' => '1.jpg',
-                'description' => 'SKU HRDDASCPLU
-
-Weight 0.2100
-
-Brand Sony',
-                'colors' => '#ff0000',
-                'price' => 3699,
-                'discount' => 3500,
-                'tag' => 'Gaming',
+                'description' => '<div class="ng-scope">
+        <p>Size: 32"<br>
+        Resolution: 2560 x 1440 (QHD)<br>
+        Panel: VA Curved 1000R<br>
+        Refresh Rate: 240Hz<br>
+        Response Time: 1ms GtG<br>
+        HDR: DisplayHDR 600</p>
+        </div>',
+                'colors' => '#000000,#ffffff',
+                'price' => 699900,
+                'discount' => 649900,
+                'tag' => 'Hot',
+                'category_id' => 3,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'name' => 'Dell S2721DGF',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Size: 27"<br>
+        Resolution: 2560 x 1440 (QHD)<br>
+        Panel: IPS<br>
+        Refresh Rate: 165Hz<br>
+        Response Time: 1ms GtG<br>
+        HDR: DisplayHDR 400</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 449900,
+                'discount' => 429900,
+                'tag' => 'New',
+                'category_id' => 3,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'name' => 'MSI Optix MAG274QRF-QD',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Size: 27"<br>
+        Resolution: 2560 x 1440 (QHD)<br>
+        Panel: Rapid IPS<br>
+        Refresh Rate: 165Hz<br>
+        Response Time: 1ms GtG<br>
+        HDR: DisplayHDR 400</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 529900,
+                'discount' => 499900,
+                'tag' => 'Hot',
+                'category_id' => 3,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'name' => 'Xbox Wireless Controller',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Connection: Xbox Wireless, Bluetooth<br>
+        Battery: 2x AA Batteries<br>
+        Features: Share button, New D-pad<br>
+        Compatibility: Xbox Series X|S, Xbox One, Windows 10/11<br>
+        Battery Life: Up to 40 hours</p>
+        </div>',
+                'colors' => '#000000,#ffffff,#0000ff',
+                'price' => 59900,
+                'discount' => 54900,
+                'tag' => 'Hot',
+                'category_id' => 4,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'name' => 'Sony DualSense',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Connection: Bluetooth, USB-C<br>
+        Features: Haptic feedback, Adaptive triggers<br>
+        Battery: Built-in rechargeable<br>
+        Compatibility: PS5, PC<br>
+        Battery Life: Up to 12 hours</p>
+        </div>',
+                'colors' => '#ffffff,#000000',
+                'price' => 69900,
+                'discount' => 64900,
+                'tag' => 'New',
+                'category_id' => 4,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'name' => 'Nintendo Switch Pro Controller',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Connection: Bluetooth, USB-C<br>
+        Battery: Rechargeable Lithium-ion<br>
+        Features: HD Rumble, Motion Controls<br>
+        Compatibility: Nintendo Switch<br>
+        Battery Life: Up to 40 hours</p>
+        </div>',
+                'colors' => '#000000,#ffffff',
+                'price' => 59900,
+                'discount' => 54900,
+                'tag' => 'Hot',
+                'category_id' => 4,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'name' => 'Razer Wolverine V2 Chroma',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Connection: Wired USB<br>
+        Features: Adjustable Trigger Stops<br>
+        Compatibility: Xbox Series X|S, Xbox One, PC<br>
+        Programmable Buttons: 6<br>
+        Chroma RGB Lighting</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 79900,
+                'discount' => 74900,
+                'tag' => 'New',
+                'category_id' => 4,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'name' => 'SanDisk Extreme Pro USB 3.2',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 256GB<br>
+        Read Speed: Up to 420MB/s<br>
+        Write Speed: Up to 380MB/s<br>
+        Interface: USB 3.2 Gen 2<br>
+        Material: Metal<br>
+        Water & Shock Resistant</p>
+        </div>',
+                'colors' => '#000000,#silver',
+                'price' => 89900,
+                'discount' => 79900,
+                'tag' => 'Hot',
+                'category_id' => 5,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            20 => 
+            array (
+                'id' => 21,
+                'name' => 'Kingston DataTraveler Kyson',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 128GB<br>
+        Read Speed: Up to 100MB/s<br>
+        Write Speed: Up to 60MB/s<br>
+        Interface: USB 3.2 Gen 1<br>
+        Compact Design<br>
+        Metal Capless Design</p>
+        </div>',
+                'colors' => '#000000,#silver',
+                'price' => 29900,
+                'discount' => 24900,
+                'tag' => 'New',
+                'category_id' => 5,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'name' => 'Samsung BAR Plus',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 128GB<br>
+        Read Speed: Up to 300MB/s<br>
+        Write Speed: Up to 200MB/s<br>
+        Interface: USB 3.1<br>
+        Metal Body<br>
+        Shock & Water Resistant</p>
+        </div>',
+                'colors' => '#silver,#black',
+                'price' => 59900,
+                'discount' => 54900,
+                'tag' => 'Hot',
+                'category_id' => 5,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            22 => 
+            array (
+                'id' => 23,
+                'name' => 'Lexar JumpDrive Tough',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 64GB<br>
+        Read Speed: Up to 150MB/s<br>
+        Write Speed: Up to 60MB/s<br>
+        Interface: USB 3.1<br>
+        Rugged Design<br>
+        Water & Shock Proof</p>
+        </div>',
+                'colors' => '#000000,#orange',
+                'price' => 39900,
+                'discount' => 34900,
+                'tag' => 'New',
+                'category_id' => 5,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            23 => 
+            array (
+                'id' => 24,
+                'name' => 'Corsair Flash Survivor Stealth',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 128GB<br>
+        Read Speed: Up to 200MB/s<br>
+        Write Speed: Up to 100MB/s<br>
+        Interface: USB 3.0<br>
+        Military-Grade Protection<br>
+        Water & Shock Resistant</p>
+        </div>',
+                'colors' => '#000000',
+                'price' => 69900,
+                'discount' => 64900,
+                'tag' => 'Hot',
+                'category_id' => 5,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            24 => 
+            array (
+                'id' => 25,
+                'name' => 'JBL Charge 5',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Driver: 2 x 52mm<br>
+        Battery Life: Up to 20 hours<br>
+        Connectivity: Bluetooth 5.1<br>
+        Waterproof: IP67<br>
+        Power Bank Function<br>
+        Frequency Response: 65Hz-20kHz</p>
+        </div>',
+                'colors' => '#black,#blue,#red',
+                'price' => 129900,
+                'discount' => 119900,
+                'tag' => 'Hot',
                 'category_id' => 6,
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
+            25 => 
+            array (
+                'id' => 26,
+                'name' => 'Sony SRS-XB43',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Driver: 61mm x 2<br>
+        Battery Life: Up to 24 hours<br>
+        Connectivity: Bluetooth 5.0<br>
+        Waterproof: IP67<br>
+        EXTRA BASS™ Technology<br>
+        Frequency Response: 20Hz-20kHz</p>
+        </div>',
+                'colors' => '#black,#blue',
+                'price' => 159900,
+                'discount' => 149900,
+                'tag' => 'New',
+                'category_id' => 6,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            26 => 
+            array (
+                'id' => 27,
+                'name' => 'UE Boom 3',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Driver: Custom-Designed<br>
+        Battery Life: Up to 15 hours<br>
+        Connectivity: Bluetooth 5.0<br>
+        Waterproof: IP67<br>
+        360-Degree Sound<br>
+        Frequency Response: 90Hz-20kHz</p>
+        </div>',
+                'colors' => '#black,#blue,#red',
+                'price' => 99900,
+                'discount' => 89900,
+                'tag' => 'Hot',
+                'category_id' => 6,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            27 => 
+            array (
+                'id' => 28,
+                'name' => 'Marshall Kilburn II',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Driver: 2 x 4" Woofer & Tweeter<br>
+        Battery Life: Up to 20 hours<br>
+        Connectivity: Bluetooth 5.0<br>
+        Vintage Design<br>
+        Multi-Directional Sound<br>
+        Frequency Response: 20Hz-20kHz</p>
+        </div>',
+                'colors' => '#black,#brown',
+                'price' => 179900,
+                'discount' => 169900,
+                'tag' => 'New',
+                'category_id' => 6,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            28 => 
+            array (
+                'id' => 29,
+                'name' => 'Bose SoundLink Revolve+',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Driver: Proprietary Transducer<br>
+        Battery Life: Up to 17 hours<br>
+        Connectivity: Bluetooth 4.2<br>
+        Waterproof: IPX4<br>
+        360-Degree Sound<br>
+        Frequency Response: 100Hz-16kHz</p>
+        </div>',
+                'colors' => '#black,#blue',
+                'price' => 149900,
+                'discount' => 139900,
+                'tag' => 'Hot',
+                'category_id' => 6,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            29 => 
+            array (
+                'id' => 30,
+                'name' => 'Anker PowerCore 10000',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 10000mAh<br>
+        Output: 18W PD Fast Charging<br>
+        Ports: USB-C, USB-A<br>
+        Weight: 180g<br>
+        Size: 92 x 60 x 22 mm<br>
+        Compatibility: Smartphones, Tablets</p>
+        </div>',
+                'colors' => '#black,#blue',
+                'price' => 49900,
+                'discount' => 44900,
+                'tag' => 'Hot',
+                'category_id' => 7,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
+            30 => 
+            array (
+                'id' => 31,
+                'name' => 'UGREEN 145W GaN PowerBank',
+                'image_name' => '1.jpg',
+                'description' => '<div class="ng-scope">
+        <p>Capacity: 25000mAh<br>
+        Max Output: 145W Power Delivery<br>
+        Ports: 2x USB-C, 1x USB-A<br>
+        Fast Charging: Laptop, Smartphone, Tablet<br>
+        GaN Technology: Compact & Efficient<br>
+        LCD Digital Display<br>
+        Compatibility: MacBook Pro, Dell XPS, iPad Pro, Smartphones</p>
+        </div>',
+                'colors' => '#black',
+                'price' => 199900,
+                'discount' => 189900,
+                'tag' => 'Hot',
+                'category_id' => 7,
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
         ));
-        
-        
     }
 }
