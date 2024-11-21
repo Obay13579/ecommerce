@@ -31,4 +31,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'roboflow' => [
+        'key' => env('ROBOFLOW_API_KEY', 'EK7HzDFbodnGKylBuT9W'),
+    ],
+
 ];

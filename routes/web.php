@@ -58,6 +58,10 @@ Route::post('/edit_cart', [UserController::class, 'editCart'])->name('user.editC
 Route::post('/delete_item_from_cart', [UserController::class, 'deleteCartItem'])->name('user.deleteCartItem');
 Route::get('/logout', [LoginController::class, 'userLogout'])->name('user.logout');
 
+// In routes/web.php
+Route::post('/ai-search', [AISearchController::class, 'searchByImage'])->name('ai.search');
+Route::get('/search/ai', [ProductController::class, 'aiSearchResults'])->name('search.ai');
+
 Route::group(['middleware' => 'user'], function() {
     Route::get('/history', [UserController::class, 'history'])->name('user.history');
 });
