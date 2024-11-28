@@ -53,10 +53,6 @@
                                             <label  >Product Price*</label>
                                             <input type="text" class="form-control" name="Price" id="Price" value="">
                                         </div>
-                                        <div class="form-group">
-                                            <label  >Product Discounted Price*</label>
-                                            <input type="text" class="form-control" id="Discounted_Price"  name="Discounted_Price" value="">
-                                        </div>
                                         
                                         <div class="form-group ">
                                             <label  >Product Colors*</label>
@@ -72,10 +68,6 @@
                                             <input type="text" class="form-control" id="color_list" name="Colors" value="" hidden>
                                         </div>
                                         
-                                        <div class="form-group">
-                                            <label >Product Tags*</label>
-                                            <input type="text" class="form-control" id="Tags" name="Tags" value="">
-                                        </div>
                                         <input type="submit" name="saveButton" class="btn btn-success mr-2" id="saveButton" value="Create"  />
                                     </form>
                                     @if($errors->any())
@@ -226,12 +218,11 @@ function addColor(){
 					required: true,
 					number: true
 				},
-                Discounted_Price: {
+                Price: {
 					required: true,
 					number: true
 				},
                 colors: "required",
-                Tags: "required"
                 
                 
 				
@@ -250,12 +241,11 @@ function addColor(){
 					required: "No Price is Entered",
 					number: "Invalid Price"
 				},
-                Discounted_Price: {
+                Price: {
 					required: "No Price is Entered",
 					number: "Invalid Price"
 				},
                 colors: "No Color is Selected",
-                Tags: "No Tags is Selected",
 				
 				
 			}

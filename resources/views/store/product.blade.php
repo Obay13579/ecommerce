@@ -48,14 +48,14 @@ label.error {
                         </div>
                     </div>
                     <div>
-                        <h3 class="product-price">IDR {{$product->discount}}</h3>
+                        <h3 class="product-price">Rp{{$product->price}}</h3>
                         <span class="product-available">In Stock</span>
                     </div>
                     <p>{!!$product->description!!}</p>
                     <form method="post" id="order_form">
                     {{csrf_field()}}
                     <div class="product-options" >
-                        <input type="hidden" id="discount_price_holder" name="discount_price_holder" value={{$product->discount}}>
+                        <input type="hidden" id="price_holder" name="price_holder" value={{$product->price}}>
                         <label>
                         
                         <div id="field1">Quantity

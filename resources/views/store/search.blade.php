@@ -26,13 +26,13 @@
                                     <a href="{{ route('user.view', ['id' => $product->id]) }}">{{ $product->name }}</a>
                                 </h3>
                                 <h4 class="product-price">
-                                    IDR {{ $product->discount }} 
+                                    Rp{{ $product->price }} 
                                 </h4>
                             </div>
                             <div class="add-to-cart">
                                 <!-- Link to view the product details -->
                                 <a class="add-to-cart-btn" href="{{ route('user.view', ['id' => $product->id]) }}">
-                                    <i></i> Purchase
+                                    Details
                                 </a>
                             </div>
                         </div>

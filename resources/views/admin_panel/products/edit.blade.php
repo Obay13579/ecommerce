@@ -45,10 +45,6 @@
                                             <label >Product Price</label>
                                             <input type="text" class="form-control" name="Price" value="{{$product->price}}">
                                         </div>
-                                        <div class="form-group">
-                                            <label >Product Discounted Price</label>
-                                            <input type="text" class="form-control"  name="Discounted_Price" value="{{$product->discount}}">
-                                        </div>
                                         
                                         <div class="form-group ">
                                             <label >Product Colors</label>
@@ -64,10 +60,6 @@
                                             <input type="text" class="form-control" id="color_list" name="Colors" value="{{$product->colors}}" hidden>
                                         </div>
                                         
-                                        <div class="form-group">
-                                            <label >Product Tags</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" name="Tags" value="{{$product->tag}}">
-                                        </div>
                                         <input type="submit" name="saveButton" class="btn btn-success mr-2" id="updateButton" value="UPDATE" />
                                     </form>
                                     @if($errors->any())

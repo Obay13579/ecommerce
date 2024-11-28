@@ -77,6 +77,14 @@ class CategoriesTableSeeder extends Seeder
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
+            7 => 
+            array (
+                'id' => 8,
+                'name' => 'Keyboard',
+                'type' => 'Keyboard',
+                'created_at' => '2024-11-06',
+                'updated_at' => '2024-11-06',
+            ),
         ));
         
     }

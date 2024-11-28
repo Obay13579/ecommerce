@@ -81,16 +81,16 @@ label.error {
                             <!--quantity-->
                                                                 <!--c[1] is pid and c[3] is order serial-->
                             <div class="rTableCell">
-                           <button type="button" id="sub" value={{$p->id}} data-rel={{$c[3]}} data-rel2={{$p->discount}} class="sub">-</button>   
+                           <button type="button" id="sub" value={{$p->id}} data-rel={{$c[3]}} data-rel2={{$p->price}} class="sub">-</button>   
                         <input type="number"  id="quantity" style="width:20%" name={{$p->id}} value={{$c[1]}} min="1" max="100" readonly/>
-                        <button type="button" id="add" value={{$p->id}} data-rel={{$c[3]}} data-rel2={{$p->discount}}  class="add">+</button></div>
+                        <button type="button" id="add" value={{$p->id}} data-rel={{$c[3]}} data-rel2={{$p->price}}  class="add">+</button></div>
                             
 <!--                            -->
 							<div class="rTableCell"><div style="height:25px;width:25px;display:inline-block;background-color: {{$c[2]}}"></div></div>
 							
 							<div class="rTableCell"><div id="individualPrice_{{$c[3]}}">
                                 @php
-                                $tot =$p->discount* $c[1];
+                                $tot =$p->price* $c[1];
                                 echo $tot;
                                 @endphp
                                 

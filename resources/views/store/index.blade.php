@@ -17,34 +17,31 @@
 
                 <!-- Products tab & slick -->
                 <div class="col-md-12">
-                    <div class="row">
-
-
-                        @foreach($products as $product)
-                        <!-- product -->
-                        <div class="col-md-3">
-                            <div class="product">
-                                <div class="product-img">
-                                    <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" alt="">
-                                    <div class="product-label">
-                                    </div>
-                                </div>
-                                <div class="product-body">
-                                    <p class="product-category">{{$product->category->name ?? 'No Category'}}</p>
-                                    <h3 class="product-name"><a href="{{route('user.view',['id'=>$product->id])}}">{{$product->name}}</a></h3>
-                                    <h4 class="product-price">IDR {{$product->discount}} </h4>
-                                    <div class="product-rating">
-                                    </div>
-                                    
-                                </div>
-                                <div class="add-to-cart">
-                                    <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}"><i></i>Purchase</a>
-                                </div>
+                <div class="row">
+                    @foreach($products as $product)
+                    <!-- product -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" alt="">
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">{{$product->category->name ?? 'No Category'}}</p>
+                                <h3 class="product-name">
+                                    <a href="{{route('user.view',['id'=>$product->id])}}">{{$product->name}}</a>
+                                </h3>
+                                <h4 class="product-price">Rp{{$product->price}}</h4>
+                            </div>
+                            <div class="add-to-cart">
+                                <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}">
+                                    Details
+                                </a>
                             </div>
                         </div>
-                        <!-- /product -->
-                        @endforeach
                     </div>
+                    <!-- /product -->
+                    @endforeach
+                </div>
                     
                 </div>
                 <!-- /row -->

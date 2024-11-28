@@ -79,7 +79,6 @@ class UserController extends Controller
 
     public function post($id,orderRequest $r)
     {
-        //dd($r->discount_price_holder);
         
         if(!(Session::has('cart')))
         {
@@ -120,7 +119,7 @@ class UserController extends Controller
             $a=explode(':',$c);
             $res = Product::find($a[0]);
             $product[]=$res;
-            $cost_after_quantity=$a[1]*$res->discount;
+            $cost_after_quantity=$a[1]*$res->price;
             $cost+= $cost_after_quantity;
             Session::put('price',$cost);
         }
@@ -188,7 +187,7 @@ class UserController extends Controller
                 $a=explode(':',$c);
                 $res = Product::find($a[0]);
                 $product[]=$res;
-                $cost_after_quantity=$a[1]*$res->discount;
+                $cost_after_quantity=$a[1]*$res->price;
                 $cost+= $cost_after_quantity;
                 Session::put('price',$cost);
                
@@ -289,7 +288,7 @@ class UserController extends Controller
                 $a=explode(':',$c);
                 $res = Product::find($a[0]);
                 $product[]=$res;
-                $cost_after_quantity=$a[1]*$res->discount;
+                $cost_after_quantity=$a[1]*$res->price;
                 $cost+= $cost_after_quantity;
                 Session::put('price',$cost);
                
