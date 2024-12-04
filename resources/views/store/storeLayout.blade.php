@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Nexus Gear</title>
@@ -99,48 +98,12 @@
                     <!-- SEARCH BAR -->
                     <div class="col-md-6">
                         <div class="header-search">
-                            <!-- Traditional Search Form -->
-                            <form action="{{route('user.search')}}" method="get" id="traditionalSearchForm">
-                                <div class="custom_search_top">
+                            <form action="{{route('user.search')}}" method="get">
+                                <div class="custom_search_top" >
                                     <input class="input" style="border-radius: 40px 0px 0px 40px;" name="n" placeholder="Search here">
-                                    <button type="submit" class="search-btn">Search</button>
+                                    <button  class="search-btn">Search</button>
                                 </div>
                             </form>
-
-                            <!-- AI Search Section -->
-                            <div class="ai-search-section mt-2">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aiSearchModal">
-                                    <i class="fa fa-image"></i> Search with AI
-                                </button>
-                            </div>
-
-                            <!-- AI Search Modal -->
-                            <div class="modal fade" id="aiSearchModal" tabindex="-1" role="dialog" aria-labelledby="aiSearchModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="aiSearchModalLabel">AI Product Search</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form id="aiSearchForm">
-                                                <div class="form-group">
-                                                    <label for="imageFile">Upload Product Image</label>
-                                                    <input type="file" class="form-control-file" id="imageFile" accept="image/*">
-                                                    <div id="imagePreview" class="mt-2"></div>
-                                                </div>
-                                                <div id="result" class="mt-3"></div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary" id="submitButton">Search with AI</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <!-- /SEARCH BAR -->
