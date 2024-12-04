@@ -41,11 +41,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 reader.onerror = reject;
                 reader.readAsDataURL(file);
             });
-
+            
             // Send request to Laravel backend
             const response = await axios.post('/api/ai-search', {
                 image: base64Image
             });
+
+            // const response = await axios({
+            //     method: 'POST',
+            //     url: '/api/ai-search',
+            //     data: {
+            //         image: base64Image  // Ensure this is the exact base64 string
+            //     },
+            //     headers: {
+            //         'Content-Type': 'application/json'  // Changed from form-urlencoded
+            //     }
+            // });
+
+            // Debug response data
+            console.log('API Response:', response.data);
 
             if (response.data.predictions && response.data.predictions.length > 0) {
                 const results = response.data.predictions.map(pred => ({

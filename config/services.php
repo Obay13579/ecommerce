@@ -27,6 +27,7 @@ return [
 
     'roboflow' => [
         'api_key' => env('ROBOFLOW_API_KEY'),
+        'endpoint' => env('ROBOFLOW_ENDPOINT')
     ],
 
     'ses' => [
