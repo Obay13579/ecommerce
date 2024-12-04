@@ -1,0 +1,85 @@
+// resources/js/ai-search.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get DOM elements
+    const imageFile = document.getElementById('imageFile');
+    const submitButton = document.getElementById('submitButton');
+    const imagePreview = document.getElementById('imagePreview');
+    const resultElement = document.getElementById('result');
+    const aiSearchForm = document.getElementById('aiSearchForm');
+
+    // Add image preview functionality
+    imageFile?.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file && file.type.match('image/*')) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                imagePreview.innerHTML = `<img src="${event.target.result}" class="img-fluid" alt="Preview">`;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Handle form submission
+    submitButton?.addEventListener('click', async () => {
+        const file = imageFile.files[0];
+
+        if (!file || !file.type.match('image/*')) {
+            alert('Please select an image file (jpg, jpeg, png).');
+            return;
+        }
+
+        // Show loading state
+        resultElement.textContent = 'Processing...';
+        submitButton.disabled = true;
+
+        try {
+            // Convert image to base64
+            const base64Image = await new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result.split(',')[1]);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+
+            // Send request to Laravel backend
+            const response = await axios.post('/api/ai-search', {
+                image: base64Image
+            });
+
+            if (response.data.predictions && response.data.predictions.length > 0) {
+                const results = response.data.predictions.map(pred => ({
+                    class: pred.class,
+                    confidence: (pred.confidence * 100).toFixed(2) + '%'
+                }));
+
+                // Create a formatted string for each prediction
+                const formattedResults = results.map(result => 
+                    `Product: ${result.class}\nConfidence: ${result.confidence}`
+                ).join('\n\n');
+
+                resultElement.textContent = formattedResults;
+
+                // Trigger traditional search with the detected product name
+                const highestConfidencePrediction = results.reduce((prev, current) => 
+                    (parseFloat(prev.confidence) > parseFloat(current.confidence)) ? prev : current
+                );
+                
+                window.location.href = `/search?n=${encodeURIComponent(highestConfidencePrediction.class)}`;
+            } else {
+                resultElement.textContent = 'No objects detected in the image.';
+            }
+
+        } catch (error) {
+            console.error('Error:', error);
+            resultElement.textContent = `Error: ${error.message}`;
+            if (error.response) {
+                console.error('Response data:', error.response.data);
+                console.error('Response status:', error.response.status);
+                resultElement.textContent += `\nStatus: ${error.response.status}`;
+            }
+        } finally {
+            submitButton.disabled = false;
+        }
+    });
+});

@@ -93,12 +93,39 @@
                     <!-- SEARCH BAR -->
                     <div class="col-md-6">
                         <div class="header-search">
+                            <!-- Traditional Search Form -->
                             <form action="{{route('user.search')}}" method="get">
-                                <div class="custom_search_top" >
-                                    <input class="input" style="border-radius: 40px 0px 0px 40px;" name="n" placeholder="Search here">
-                                    <button  class="search-btn">Search</button>
+                                <div class="custom_search_top">
+                                    <input class="input" name="n" placeholder="Search here">
+                                    <button class="search-btn" style="border-radius: 0;">Search</button>
+                                    <button type="button" class="search-btn" style="border-radius: 0 40px 40px 0;" data-toggle="modal" data-target="#aiSearchModal">
+                                        <i class="fa fa-camera"></i>
+                                    </button>
                                 </div>
                             </form>
+
+                            <!-- AI Search Modal -->
+                            <div class="modal fade" id="aiSearchModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Search by Image</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="file" class="form-control-file" id="imageFile" accept="image/*">
+                                            <div id="imagePreview" class="mt-2"></div>
+                                            <div id="result" class="mt-3"></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="submitButton">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- /SEARCH BAR -->
@@ -260,6 +287,9 @@
 
 
     <!-- jQuery Plugins -->
+    <!-- Add this in the head section or before closing body tag -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{{asset('js/ai-search.js') }}"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/slick.min.js')}}"></script>
