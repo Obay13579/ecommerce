@@ -33,33 +33,23 @@ document.addEventListener('DOMContentLoaded', function() {
         resultElement.textContent = 'Processing...';
         submitButton.disabled = true;
 
+        const formData = new FormData();
+        formData.append('image', file); // `file` is the image file object from a file input
+
         try {
-            // Convert image to base64
-            const base64Image = await new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onload = () => resolve(reader.result.split(',')[1]);
-                reader.onerror = reject;
-                reader.readAsDataURL(file);
-            });
-            
-            // Send request to Laravel backend
-            const response = await axios.post('/api/ai-search', {
-                image: base64Image
+            // Send the image to your Laravel backend
+            const response = await axios.post('/api/ai-search', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
             });
 
-            // const response = await axios({
-            //     method: 'POST',
-            //     url: '/api/ai-search',
-            //     data: {
-            //         image: base64Image  // Ensure this is the exact base64 string
-            //     },
-            //     headers: {
-            //         'Content-Type': 'application/json'  // Changed from form-urlencoded
-            //     }
-            // });
-
-            // Debug response data
-            console.log('API Response:', response.data);
+            // Handle the response
+            if (response.data.error) {
+                console.error('Error:', response.data.error);
+            } else {
+                console.log('Response:', response.data);
+            }
 
             if (response.data.predictions && response.data.predictions.length > 0) {
                 const results = response.data.predictions.map(pred => ({

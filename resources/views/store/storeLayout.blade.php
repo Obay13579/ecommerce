@@ -96,7 +96,7 @@
                             <!-- Traditional Search Form -->
                             <form action="{{route('user.search')}}" method="get">
                                 <div class="custom_search_top">
-                                    <input class="input" name="n" placeholder="Search here">
+                                    <input class="input" name="n" style="border-radius: 40px 0 0 40px;" placeholder="Search here">
                                     <button class="search-btn" style="border-radius: 0;">Search</button>
                                     <button type="button" class="search-btn" style="border-radius: 0 40px 40px 0;" data-toggle="modal" data-target="#aiSearchModal">
                                         <i class="fa fa-camera"></i>
@@ -115,8 +115,25 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <input type="file" class="form-control-file" id="imageFile" accept="image/*">
-                                            <div id="imagePreview" class="mt-2"></div>
+                                            <!-- File Input -->
+                                            <input 
+                                                type="file" 
+                                                class="form-control-file" 
+                                                id="imageFile" 
+                                                accept="image/*" 
+                                                onchange="previewImage(event)">
+
+                                            <!-- Image Preview Box with Scroll -->
+                                            <div id="imagePreview" 
+                                                style="margin-top: 10px; width: 100%; height: 300px; overflow-y: auto; border: 1px solid #ccc; border-radius: 5px; text-align: center;">
+                                                <img 
+                                                    id="previewImg" 
+                                                    src="#" 
+                                                    alt="Preview" 
+                                                    style="max-width: 100%; display: none;">
+                                            </div>
+
+                                            <!-- Result Section -->
                                             <div id="result" class="mt-3"></div>
                                         </div>
                                         <div class="modal-footer">
@@ -129,6 +146,23 @@
                         </div>
                     </div>
                     <!-- /SEARCH BAR -->
+                    <script>
+                        function previewImage(event) {
+                            const previewImg = document.getElementById('previewImg');
+                            const file = event.target.files[0];
+                    
+                            if (file) {
+                                const reader = new FileReader();
+                                reader.onload = function(e) {
+                                    previewImg.src = e.target.result;
+                                    previewImg.style.display = "block"; // Show the preview image
+                                };
+                                reader.readAsDataURL(file);
+                            } else {
+                                previewImg.style.display = "none"; // Hide the preview image if no file is selected
+                            }
+                        }
+                    </script>
 
                     <!-- ACCOUNT -->
                     <div class="col-md-3 clearfix">
