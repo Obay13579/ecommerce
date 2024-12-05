@@ -52,24 +52,40 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (response.data.predictions && response.data.predictions.length > 0) {
+                const categoryMapping = {
+                    'Headset': 1,
+                    'Mouse': 2,
+                    'Monitor': 3,
+                    'Gamepad': 4,
+                    'USB-Flash-Drive': 5,
+                    'Speaker': 6,
+                    'Powerbank': 7,
+                    'Keyboard': 8
+                };
+            
                 const results = response.data.predictions.map(pred => ({
                     class: pred.class,
                     confidence: (pred.confidence * 100).toFixed(2) + '%'
                 }));
-
+            
                 // Create a formatted string for each prediction
                 const formattedResults = results.map(result => 
                     `Product: ${result.class}\nConfidence: ${result.confidence}`
                 ).join('\n\n');
-
+            
                 resultElement.textContent = formattedResults;
-
-                // Trigger traditional search with the detected product name
+            
+                // Trigger search with the detected product name and its corresponding category number
                 const highestConfidencePrediction = results.reduce((prev, current) => 
                     (parseFloat(prev.confidence) > parseFloat(current.confidence)) ? prev : current
                 );
                 
-                window.location.href = `/search?n=${encodeURIComponent(highestConfidencePrediction.class)}`;
+                // Get the category number, default to 0 if not found
+                const categoryNumber = categoryMapping[highestConfidencePrediction.class] || 0;
+                console.log(categoryNumber);
+                
+                // Modify the search URL to use category-based routing
+                window.location.href = `/search/category/${categoryNumber}?n=${encodeURIComponent(highestConfidencePrediction.class)}`;
             } else {
                 resultElement.textContent = 'No objects detected in the image.';
             }
