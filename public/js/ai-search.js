@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (response.data.predictions && response.data.predictions.length > 0) {
                 const categoryMapping = {
-                    'Headset': 1,
+                    'Headphone': 1,
                     'Mouse': 2,
                     'Monitor': 3,
                     'Gamepad': 4,
@@ -63,32 +63,39 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Keyboard': 8
                 };
             
+                // Map predictions to results array
                 const results = response.data.predictions.map(pred => ({
-                    class: pred.class,
-                    confidence: (pred.confidence * 100).toFixed(2) + '%'
+                    class: pred.class.trim(), // Trim to avoid issues with leading/trailing spaces
+                    confidence: pred.confidence // Keep as a number for easier calculations
                 }));
             
-                // Create a formatted string for each prediction
+                // Format results for display
                 const formattedResults = results.map(result => 
-                    `Product: ${result.class}\nConfidence: ${result.confidence}`
+                    `Product: ${result.class}\nConfidence: ${(result.confidence * 100).toFixed(2)}%`
                 ).join('\n\n');
             
                 resultElement.textContent = formattedResults;
             
-                // Trigger search with the detected product name and its corresponding category number
+                // Find the prediction with the highest confidence
                 const highestConfidencePrediction = results.reduce((prev, current) => 
-                    (parseFloat(prev.confidence) > parseFloat(current.confidence)) ? prev : current
+                    (prev.confidence > current.confidence) ? prev : current
                 );
-                
-                // Get the category number, default to 0 if not found
+            
+                // Get the category number, default to 0 if the class is not in the mapping
                 const categoryNumber = categoryMapping[highestConfidencePrediction.class] || 0;
-                console.log(categoryNumber);
-                
-                // Modify the search URL to use category-based routing
-                window.location.href = `/search/category/${categoryNumber}?n=${encodeURIComponent(highestConfidencePrediction.class)}`;
+            
+                if (categoryNumber > 0) {
+                    // Redirect to the category search URL
+                    window.location.href = `/search/category/${categoryNumber}`;
+                } else {
+                    // Handle case when no matching category is found
+                    console.error(`No category mapping found for class: ${highestConfidencePrediction.class}`);
+                    resultElement.textContent = `No category mapping found for detected product: ${highestConfidencePrediction.class}`;
+                }
             } else {
                 resultElement.textContent = 'No objects detected in the image.';
             }
+            
 
         } catch (error) {
             console.error('Error:', error);
