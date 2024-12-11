@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultElement = document.getElementById('result');
     const aiSearchForm = document.getElementById('aiSearchForm');
 
+    // Confidence threshold setting 
+    const CONFIDENCE_THRESHOLD = 0.6;
+
     // Add image preview functionality
     imageFile?.addEventListener('change', (e) => {
         const file = e.target.files[0];
@@ -34,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitButton.disabled = true;
 
         const formData = new FormData();
-        formData.append('image', file); // `file` is the image file object from a file input
+        formData.append('image', file);
 
         try {
             // Send the image to your Laravel backend
@@ -47,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Handle the response
             if (response.data.error) {
                 console.error('Error:', response.data.error);
-            } else {
-                console.log('Response:', response.data);
+                resultElement.textContent = 'An error occurred during processing.';
+                return;
             }
 
             if (response.data.predictions && response.data.predictions.length > 0) {
@@ -63,10 +66,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Keyboard': 8
                 };
             
-                // Map predictions to results array
-                const results = response.data.predictions.map(pred => ({
-                    class: pred.class.trim(), // Trim to avoid issues with leading/trailing spaces
-                    confidence: pred.confidence // Keep as a number for easier calculations
+                // Filter predictions based on confidence threshold
+                const filteredPredictions = response.data.predictions.filter(
+                    pred => pred.confidence >= CONFIDENCE_THRESHOLD
+                );
+
+                // Check if any predictions meet the confidence threshold
+                if (filteredPredictions.length === 0) {
+                    resultElement.textContent = 'No objects detected with sufficient confidence.';
+                    return;
+                }
+            
+                // Map filtered predictions to results array
+                const results = filteredPredictions.map(pred => ({
+                    class: pred.class.trim(),
+                    confidence: pred.confidence
                 }));
             
                 // Format results for display
@@ -96,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 resultElement.textContent = 'No objects detected in the image.';
             }
             
-
         } catch (error) {
             console.error('Error:', error);
             resultElement.textContent = `Error: ${error.message}`;
