@@ -34,7 +34,7 @@
                         Weight: 309g</p>
                     </div>',
                     'colors' => '#ff0000,#000000',
-                    'price' => '1.299.000',
+                    'price' => 1299000,
                     'category_id' => 1,
                     'created_at' => now(),
                     'updated_at' => now(),
@@ -52,7 +52,7 @@
                         Weight: 320g</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '2.815.120',
+                    'price' => 2815120,
                     'category_id' => 1,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -70,7 +70,7 @@
                         Weight: 354g</p>
                     </div>',
                     'colors' => '#ffffff,#000000',
-                    'price' => '2.859.120',
+                    'price' => 2859120,
                     'category_id' => 1,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -88,7 +88,7 @@
                         Weight: 320g</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '2.947.120',
+                    'price' => 2947120,
                     'category_id' => 1,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -106,7 +106,7 @@
                         Weight: 367g</p>
                     </div>',
                     'colors' => '#000000,#ffffff',
-                    'price' => '1.931.160',
+                    'price' => 1931160,
                     'category_id' => 1,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -124,7 +124,7 @@
                         Weight: 63g</p>
                     </div>',
                     'colors' => '#ffffff,#000000,#ff69b4',
-                    'price' => '1.486.320',
+                    'price' => 1486320,
                     'category_id' => 2,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -142,7 +142,7 @@
                         Weight: 63g</p>
                     </div>',
                     'colors' => '#ffffff,#000000',
-                    'price' => '1.759.120',
+                    'price' => 1759120,
                     'category_id' => 2,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -160,7 +160,7 @@
                         Weight: 80g</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '682.000',
+                    'price' => 682000,
                     'category_id' => 2,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -178,7 +178,7 @@
                         Weight: 73g</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '1.850.000',
+                    'price' => 1850000,
                     'category_id' => 2,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -196,7 +196,7 @@
                         Weight: 69g</p>
                     </div>',
                     'colors' => '#ffffff,#000000',
-                    'price' => '1.200.000',
+                    'price' => 1200000,
                     'category_id' => 2,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -214,7 +214,7 @@
                         HDR: VESA DisplayHDR 400</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '4.620.000',
+                    'price' => 4620000,
                     'category_id' => 3,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -232,7 +232,7 @@
                         HDR: DisplayHDR 400</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '17.249.000',
+                    'price' => 17249000,
                     'category_id' => 3,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -250,7 +250,7 @@
                         HDR: DisplayHDR 600</p>
                     </div>',
                     'colors' => '#000000,#ffffff',
-                    'price' => '8.436.560',
+                    'price' => 8436560,
                     'category_id' => 3,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -268,7 +268,7 @@
                         HDR: DisplayHDR 400</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '6.071.120',
+                    'price' => 6071120,
                     'category_id' => 3,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -286,7 +286,7 @@
                         HDR: DisplayHDR 400</p>
                     </div>',
                     'colors' => '#000000',
-                    'price' => '6.242.720',
+                    'price' => 6242720,
                     'category_id' => 3,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -303,7 +303,7 @@
                         Battery Life: Up to 40 hours</p>
                     </div>',
                     'colors' => '#000000,#ffffff,#0000ff',
-                    'price' => '802.750',
+                    'price' => 802750,
                     'category_id' => 4,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -320,7 +320,7 @@
                         Battery Life: Up to 12 hours</p>
                     </div>',
                     'colors' => '#ffffff,#000000',
-                    'price' => '1.050.000',
+                    'price' => 1050000,
                     'category_id' => 4,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -337,7 +337,7 @@
                         Battery Life: Up to 40 hours</p>
                     </div>',
                     'colors' => '#000000,#ffffff',
-                    'price' => '759.050',
+                    'price' => 759050,
                     'category_id' => 4,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -354,7 +354,7 @@
             Chroma RGB Lighting</p>
             </div>',
                     'colors' => '#000000',
-                    'price' => '1.345.520',
+                    'price' => 1345520,
                     'category_id' => 4,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -372,7 +372,7 @@
             Water & Shock Resistant</p>
             </div>',
                     'colors' => '#000000,#silver',
-                    'price' => '856.420',
+                    'price' => 856420,
                     'category_id' => 5,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -390,7 +390,7 @@
             Metal Capless Design</p>
             </div>',
                     'colors' => '#silver',
-                    'price' => '250.000',
+                    'price' => 250000,
                     'category_id' => 5,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -408,7 +408,7 @@
             Shock & Water Resistant</p>
             </div>',
                     'colors' => '#silver,#black',
-                    'price' => '300.000',
+                    'price' => 300000,
                     'category_id' => 5,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -426,7 +426,7 @@
             Water & Shock Proof</p>
             </div>',
                     'colors' => '#000000,#orange',
-                    'price' => '90.000',
+                    'price' => 90000,
                     'category_id' => 5,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -444,7 +444,7 @@
             Water & Shock Resistant</p>
             </div>',
                     'colors' => '#000000',
-                    'price' => '450.000',
+                    'price' => 450000,
                     'category_id' => 5,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -462,7 +462,7 @@
             Frequency Response: 65Hz-20kHz</p>
             </div>',
                     'colors' => '#black,#blue,#red',
-                    'price' => '1.930.720',
+                    'price' => 1930720,
                     'category_id' => 6,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -480,7 +480,7 @@
             Frequency Response: 20Hz-20kHz</p>
             </div>',
                     'colors' => '#black,#blue',
-                    'price' => '2.250.000',
+                    'price' => 2250000,
                     'category_id' => 6,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -498,7 +498,7 @@
             Frequency Response: 90Hz-20kHz</p>
             </div>',
                     'colors' => '#black,#blue,#red',
-                    'price' => '2.430.000',
+                    'price' => 2430000,
                     'category_id' => 6,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -516,7 +516,7 @@
             Frequency Response: 20Hz-20kHz</p>
             </div>',
                     'colors' => '#black,#brown',
-                    'price' => '3.916.000',
+                    'price' => 3916000,
                     'category_id' => 6,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -534,7 +534,7 @@
             Frequency Response: 100Hz-16kHz</p>
             </div>',
                     'colors' => '#black,#blue',
-                    'price' => '539.100',
+                    'price' => 539100,
                     'category_id' => 6,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -552,7 +552,7 @@
             Compatibility: Smartphones, Tablets</p>
             </div>',
                     'colors' => '#black,#blue',
-                    'price' => '220.000',
+                    'price' => 220000,
                     'category_id' => 7,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -571,7 +571,7 @@
             Compatibility: MacBook Pro, Dell XPS, iPad Pro, Smartphones</p>
             </div>',
                     'colors' => '#black',
-                    'price' => '975.000',
+                    'price' => 975000,
                     'category_id' => 7,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -591,7 +591,7 @@
                         Battery Life: Up to 192 hours</p>
                     </div>',
                     'colors' => '#black,#green',
-                    'price' => '3.343.120',
+                    'price' => 3343120,
                     'category_id' => 8,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -611,7 +611,7 @@
                         Anti-Ghosting: Full Key Rollover</p>
                     </div>',
                     'colors' => '#black,#silver',
-                    'price' => '1.971.200',
+                    'price' => 1971200,
                     'category_id' => 8,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
@@ -631,7 +631,7 @@
                         Profile: Ultra-Thin Design</p>
                     </div>',
                     'colors' => '#black,#white',
-                    'price' => '2.691.920',
+                    'price' => 2691920,
                     'category_id' => 8,
                     'created_at' => '2024-11-06',
                     'updated_at' => '2024-11-06',
