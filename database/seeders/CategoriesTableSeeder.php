@@ -56,8 +56,8 @@ class CategoriesTableSeeder extends Seeder
             4 => 
             array (
                 'id' => 5,
-                'name' => 'Flashdisk',
-                'type' => 'Flashdisk',
+                'name' => 'Flashdrive',
+                'type' => 'Flashdrive',
                 'created_at' => '2024-11-06',
                 'updated_at' => '2024-11-06',
             ),
