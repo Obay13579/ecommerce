@@ -19,26 +19,26 @@
                                         {{csrf_field()}}
                                         <div class="form-group">
                                             <br><br>
-                                            <label >Product Name</label>
+                                            <label >Name</label>
                                             <input type="text" class="form-control" id="exampleInputEmail1" name="Name" value="{{$product->name}}" disabled>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Product Description</label>
+                                            <label for="exampleInputPassword1">Description</label>
                                             <textarea type="textarea" class="form-control" name="Description" disabled>{{$product->description}}</textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Large select</label>
+                                            <label for="exampleFormControlSelect1">Categories</label>
                                             <select class="form-control form-control-md" id="exampleFormControlSelect1" name="Category" disabled>
                                                 <option>{{$product->category->name}}</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label >Product Price</label>
+                                            <label >Price</label>
                                             <input type="text" class="form-control" name="Price" value="{{$product->price}}" disabled>
                                         </div>
                                         
                                         <div class="form-group ">
-                                            <label >Product Colors</label>
+                                            <label >Colors</label>
                                             <br>
                                             <div id="colors" style="border:1px solid #eee"> 
                                             </div>  

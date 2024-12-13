@@ -27,27 +27,27 @@
                                         
                                        <input id="inp_img" name="img" type="hidden" value="">
                                         <div class="form-group">
-                                            <label >Product Name</label>
+                                            <label >Name</label>
                                             <input type="text" class="form-control" id="exampleInputEmail1" name="Name" value="{{$product->name}}">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Product Description</label>
+                                            <label for="exampleInputPassword1">Description</label>
                                             <textarea type="textarea" class="form-control" name="Description">{{$product->description}}</textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Large select</label>
+                                            <label for="exampleFormControlSelect1">Categories</label>
                                             <select class="form-control form-control-md" id="exampleFormControlSelect1" name="Category">
                                                 @php foreach($catlist->all() as $cat) { if($product->category->id==$cat->id) { $select_attribute='selected'; } echo "
                                                 <option value=".$cat->id." " .$select_attribute.">".$cat->name." </option>"; $select_attribute=''; } @endphp
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label >Product Price</label>
+                                            <label >Price</label>
                                             <input type="text" class="form-control" name="Price" value="{{$product->price}}">
                                         </div>
                                         
                                         <div class="form-group ">
-                                            <label >Product Colors</label>
+                                            <label >Colors</label>
                                             
                                             <input type="color" id="picker" class="form-control col-md-2">
                                             <br>
