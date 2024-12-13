@@ -24,7 +24,7 @@ class AdminsTableSeeder extends Seeder
             0 => 
             array (
                 'username' => 'admin',
-                'name' => 'Nexus Admin',
+                'name' => 'Gearable Admin',
                 'password' => '12345',
                 'created_at' => '2018-08-28',
                 'updated_at' => '2018-08-28',
