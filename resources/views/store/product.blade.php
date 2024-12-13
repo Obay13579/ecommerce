@@ -114,7 +114,7 @@ label.error {
             if($('input[name=color]:checked').val()==undefined)
             {
                 
-            document.getElementById("for_error").innerHTML = "<label class='error' style=' '>Invalid Variation Input</label>";
+            document.getElementById("for_error").innerHTML = "<label class='error' style=' '>You Must Choose The Colour First</label>";
 
             }
                 else
