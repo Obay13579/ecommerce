@@ -264,9 +264,9 @@
                             <h3 class="footer-title">About Us</h3>
                             <p>We Are The Best Accessories Reseller</p>
                             <ul class="footer-links">
-                                <li><p><i class="fa fa-map-marker"></i>Jl. Hartono</p></li>
+                                <li><p><i class="fa fa-map-marker"></i>Jl. Klampis Margorejo XVI No. 309</p></li>
                                 <li><p><i class="fa fa-phone"></i>+62 135 3124 3451 </p></li>
-                                <li><p><i class="fa fa-envelope-o"></i>ivanwibu@yahoo.com</p></li>
+                                <li><p><i class="fa fa-envelope-o"></i>gearable@gmail.com</p></li>
                             </ul>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                             <ul class="footer-links">
                                 <li><p>Headset</p></li>
                                 <li><p>Mouse</p></li>
-                                <li><p>Keyaboard</p></li>
+                                <li><p>Keyboard</p></li>
                                 <li><p>Monitors</p></li>
                             </ul>
                         </div>
