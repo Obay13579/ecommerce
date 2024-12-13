@@ -264,9 +264,9 @@
                             <h3 class="footer-title">About Us</h3>
                             <p>We Are The Best Accessories Reseller</p>
                             <ul class="footer-links">
-                                <li><a href="#"><i class="fa fa-map-marker"></i>Jl. Hartono</a></li>
-                                <li><a href="#"><i class="fa fa-phone"></i>+62 135 3124 3451 </a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>ivanwibu@yahoo.com</a></li>
+                                <li><p><i class="fa fa-map-marker"></i>Jl. Hartono</p></li>
+                                <li><p><i class="fa fa-phone"></i>+62 135 3124 3451 </p></li>
+                                <li><p><i class="fa fa-envelope-o"></i>ivanwibu@yahoo.com</p></li>
                             </ul>
                         </div>
                     </div>
@@ -275,10 +275,10 @@
                         <div class="footer">
                             <h3 class="footer-title">Categories</h3>
                             <ul class="footer-links">
-                                <li><a href="#">Headset</a></li>
-                                <li><a href="#">Mouse</a></li>
-                                <li><a href="#">Keyaboard</a></li>
-                                <li><a href="#">Monitors</a></li>
+                                <li><p>Headset</p></li>
+                                <li><p>Mouse</p></li>
+                                <li><p>Keyaboard</p></li>
+                                <li><p>Monitors</p></li>
                             </ul>
                         </div>
                     </div>
@@ -289,11 +289,11 @@
                         <div class="footer">
                             <h3 class="footer-title">Information</h3>
                             <ul class="footer-links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Orders and Returns</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><p>About Us</p></li>
+                                <li><p>Contact Us</p></li>
+                                <li><p>Privacy Policy</p></li>
+                                <li><p>Orders and Returns</p></li>
+                                <li><p>Terms & Conditions</p></li>
                             </ul>
                         </div>
                     </div>
@@ -302,11 +302,11 @@
                         <div class="footer">
                             <h3 class="footer-title">Tools</h3>
                             <ul class="footer-links">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">View Cart</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Track My Order</a></li>
-                                <li><a href="#">Help</a></li>
+                                <li><p>My Account</p></li>
+                                <li><p>View Cart</p></li>
+                                <li><p>Wishlist</p></li>
+                                <li><p>Track My Order</p></li>
+                                <li><p>Help</p></li>
                             </ul>
                         </div>
                     </div>
