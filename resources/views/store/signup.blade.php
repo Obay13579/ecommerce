@@ -31,7 +31,7 @@ label.error {
                     </div>
                     
                     <div class="form-group ">
-                        <input class="input" type="text" name="name" id="name" placeholder="Full Name">
+                        <input class="input" type="text" name="name" id="name" placeholder="Full name">
                     </div>
                    {!! $errors->first('name', '<label class="error">:message</label>') !!}
                     

@@ -21,12 +21,12 @@
                       <form class="forms-sample" method="post"  id="cat_form">
                       {{csrf_field()}}
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Category Name</label>
-                          <input type="text" class="form-control" id="Name" name="Name" value="{{$category->name}}">
+                          <label for="exampleInputEmail1">Category name</label>
+                          <input type="text" class="form-control" id="name" name="name" value="{{$category->name}}">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Category Type</label>
-                          <textarea type="textarea" class="form-control" id="Type" name="Type" >{{$category->type}}</textarea>
+                          <label for="exampleInputPassword1">Category type</label>
+                          <textarea type="textarea" class="form-control" id="type" name="type" >{{$category->type}}</textarea>
                         </div>
                         <input  type="submit" name="updateButton"  class="btn btn-success mr-2" id="updateButton" value="UPDATE" />
                       </form>
@@ -50,15 +50,15 @@
 		// validate signup form on keyup and submit
 		$("#cat_form").validate({
 			rules: {
-				Name: "required",
-				Type: "required",
+				name: "required",
+				type: "required",
 				
 				
 				
 			},
 			messages: {
-				Name: "Category Name is Required",
-				Type: "Category Type is Required",
+				name: "Category name is Required",
+				type: "Category type is Required",
                 	
 			}
 		});

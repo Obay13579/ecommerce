@@ -8681,7 +8681,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 	while ( dataTypes[ 0 ] === "*" ) {
 		dataTypes.shift();
 		if ( ct === undefined ) {
-			ct = s.mimeType || jqXHR.getResponseHeader("Content-Type");
+			ct = s.mimeType || jqXHR.getResponseHeader("Content-type");
 		}
 	}
 
@@ -9121,7 +9121,7 @@ jQuery.extend({
 
 		// Set the correct header, if data is being sent
 		if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
-			jqXHR.setRequestHeader( "Content-Type", s.contentType );
+			jqXHR.setRequestHeader( "Content-type", s.contentType );
 		}
 
 		// Set the Accepts header for the server, depending on the dataType
@@ -9615,7 +9615,7 @@ if ( xhrSupported ) {
 					// Set headers
 					for ( i in headers ) {
 						// Support: IE<9
-						// IE's ActiveXObject throws a 'Type Mismatch' exception when setting
+						// IE's ActiveXObject throws a 'type Mismatch' exception when setting
 						// request header to a null-value.
 						//
 						// To keep consistent with other XHR implementations, cast the value

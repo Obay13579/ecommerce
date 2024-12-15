@@ -51,7 +51,7 @@ class productsController extends Controller
     
             $prd = new Product();
             $prd->image_name = "1".$ext;
-            $prd->name = $request->Name;
+            $prd->name = $request->name;
             $prd->description = $request->Description;
             $prd->category_id = $request->Category;
             $prd->price = $request->Price;
@@ -130,7 +130,7 @@ class productsController extends Controller
         
         
         $prdToUpdate = Product::find($request->id);
-        $prdToUpdate->name = $request->Name;
+        $prdToUpdate->name = $request->name;
         $prdToUpdate->description = $request->Description;
         $prdToUpdate->price = $request->Price;
         $prdToUpdate->category_id = $request->Category;

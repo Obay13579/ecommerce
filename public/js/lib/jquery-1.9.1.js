@@ -4157,7 +4157,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			return results;
 		};
 
-	// Name
+	// name
 	Expr.find["NAME"] = support.getByName && function( tag, context ) {
 		if ( typeof context.getElementsByName !== strundefined ) {
 			return context.getElementsByName( name );
@@ -7923,7 +7923,7 @@ jQuery.extend({
 
 		// Set the correct header, if data is being sent
 		if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
-			jqXHR.setRequestHeader( "Content-Type", s.contentType );
+			jqXHR.setRequestHeader( "Content-type", s.contentType );
 		}
 
 		// Set the Accepts header for the server, depending on the dataType
@@ -8131,7 +8131,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 	while( dataTypes[ 0 ] === "*" ) {
 		dataTypes.shift();
 		if ( ct === undefined ) {
-			ct = s.mimeType || jqXHR.getResponseHeader("Content-Type");
+			ct = s.mimeType || jqXHR.getResponseHeader("Content-type");
 		}
 	}
 

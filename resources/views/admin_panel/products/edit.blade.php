@@ -27,8 +27,8 @@
                                         
                                        <input id="inp_img" name="img" type="hidden" value="">
                                         <div class="form-group">
-                                            <label >Name</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" name="Name" value="{{$product->name}}">
+                                            <label >name</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" name="name" value="{{$product->name}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Description</label>

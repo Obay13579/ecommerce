@@ -27,8 +27,8 @@ class categoriesController extends Controller
     public function posted( CategoryVerifyRequest $request)
     {
         $cat = new Category();
-        $cat->name = $request->Name;
-        $cat->type = $request->Type;
+        $cat->name = $request->name;
+        $cat->type = $request->type;
         $cat->save();
         return redirect()->route('admin.categories');
     }
@@ -47,8 +47,8 @@ class categoriesController extends Controller
     {
       
         $catToUpdate = Category::find($request->id);
-        $catToUpdate->name = $request->Name;
-        $catToUpdate->type = $request->Type;
+        $catToUpdate->name = $request->name;
+        $catToUpdate->type = $request->type;
         $catToUpdate->save();
         
         return redirect()->route('admin.categories');

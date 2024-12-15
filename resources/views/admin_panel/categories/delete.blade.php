@@ -13,12 +13,12 @@
                       <form class="forms-sample" method="post">
                       {{csrf_field()}}
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Category Name</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" name="Name" value="{{$category->name}}" disabled>
+                          <label for="exampleInputEmail1">Category name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" name="name" value="{{$category->name}}" disabled>
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Category Type</label>
-                          <textarea type="textarea" class="form-control" name="Type" disabled>{{$category->type}}</textarea>
+                          <label for="exampleInputPassword1">Category type</label>
+                          <textarea type="textarea" class="form-control" name="type" disabled>{{$category->type}}</textarea>
                         </div>
                         <input  type="submit" name="updateButton"  class="btn btn-danger mr-2" id="updateButton" value="DELETE" />
                       </form>

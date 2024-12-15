@@ -2344,7 +2344,7 @@ define(
 
     var requestServiceBlob = function (url, apiKey) {
       return Utils.requestUrlAsBlob(appendApiKey(url, apiKey), {
-        'Content-Type': 'application/json;charset=UTF-8',
+        'Content-type': 'application/json;charset=UTF-8',
         'tiny-api-key': apiKey
       }).then(function (result) {
         return result.status < 200 || result.status >= 300 ? Errors.handleServiceErrorResponse(result.status, result.blob) : Promise.resolve(result.blob);

@@ -25,7 +25,7 @@ class ProductVerifyRequest extends FormRequest
     {
         return [
             
-            'Name' => 'required|max:50',
+            'name' => 'required|max:50',
             'Description' => 'required',
             'Price' => 'required|numeric',
             'Price' => 'required|numeric',

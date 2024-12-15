@@ -820,7 +820,7 @@ function Sizzle( selector, context, results, seed ) {
 						}
 					}
 
-				// Type selector
+				// type selector
 				} else if ( match[2] ) {
 					push.apply( results, context.getElementsByTagName( selector ) );
 					return results;
@@ -3836,7 +3836,7 @@ jQuery.extend( {
 
 // These usually indicate a programmer mistake during development,
 // warn about them ASAP rather than swallowing them by default.
-var rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;
+var rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|type|URI)Error$/;
 
 jQuery.Deferred.exceptionHook = function( error, stack ) {
 
@@ -8593,7 +8593,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 	while ( dataTypes[ 0 ] === "*" ) {
 		dataTypes.shift();
 		if ( ct === undefined ) {
-			ct = s.mimeType || jqXHR.getResponseHeader( "Content-Type" );
+			ct = s.mimeType || jqXHR.getResponseHeader( "Content-type" );
 		}
 	}
 
@@ -9079,7 +9079,7 @@ jQuery.extend( {
 
 		// Set the correct header, if data is being sent
 		if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
-			jqXHR.setRequestHeader( "Content-Type", s.contentType );
+			jqXHR.setRequestHeader( "Content-type", s.contentType );
 		}
 
 		// Set the Accepts header for the server, depending on the dataType

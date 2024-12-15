@@ -24,8 +24,8 @@ class CategoryEditVerifyRequest extends FormRequest
     public function rules()
     {
         return [
-            'Name' => 'required|max:50|',
-            'Type' => 'required'
+            'name' => 'required|max:50|',
+            'type' => 'required'
         ];
     }
 }

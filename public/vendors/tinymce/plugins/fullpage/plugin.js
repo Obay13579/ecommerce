@@ -306,7 +306,7 @@ define(
 
           if (name) {
             data[name.toLowerCase()] = meta.attr('content');
-          } else if (httpEquiv == "Content-Type") {
+          } else if (httpEquiv == "Content-type") {
             matches = /charset\s*=\s*(.*)\s*/gi.exec(meta.attr('content'));
 
             if (matches) {
@@ -410,7 +410,7 @@ define(
         // Add meta encoding
         elm = null;
         each(headerFragment.getAll('meta'), function (meta) {
-          if (meta.attr('http-equiv') == 'Content-Type') {
+          if (meta.attr('http-equiv') == 'Content-type') {
             elm = meta;
           }
         });
@@ -418,7 +418,7 @@ define(
         if (data.docencoding) {
           if (!elm) {
             elm = new Node('meta', 1);
-            elm.attr('http-equiv', 'Content-Type');
+            elm.attr('http-equiv', 'Content-type');
             elm.shortEnded = true;
             addHeadNode(elm);
           }
@@ -681,7 +681,7 @@ define(
         }
 
         if ((value = editor.getParam('fullpage_default_encoding'))) {
-          header += '<meta http-equiv="Content-Type" content="text/html; charset=' + value + '" />\n';
+          header += '<meta http-equiv="Content-type" content="text/html; charset=' + value + '" />\n';
         }
 
         if ((value = editor.getParam('fullpage_default_font_family'))) {

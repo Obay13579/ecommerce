@@ -35,8 +35,8 @@
                                         <br><br>
                                         <div id="for_extension_error"></div>
                                         <div class="form-group">
-                                            <label  >Name*</label>
-                                            <input type="text" class="form-control" id="Name" name="Name"  value="">
+                                            <label  >name*</label>
+                                            <input type="text" class="form-control" id="name" name="name"  value="">
                                         </div>
                                         <div class="form-group">
                                             <label  for="Description">Description*</label>
@@ -209,7 +209,7 @@ function addColor(){
             
 			rules: {
               
-                Name: "required",
+                name: "required",
                 inp_files: "required",
                 
                 Description: "required",
@@ -232,7 +232,7 @@ function addColor(){
 			},
 			messages: {
 				
-				Name: "No Name is Entered",
+				name: "No name is Entered",
                 inp_files:  "ERRRERRR",
                 Description: "No Description is Entered",
                 Category: "No Category is Selected",

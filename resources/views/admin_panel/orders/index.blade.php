@@ -14,13 +14,13 @@
                                         Id
                                     </th>
                                     <th>
-                                        Name
+                                        name
                                     </th>
                                     <th>
                                         Adress
                                     </th>
                                     <th>
-                                        Product Name
+                                        Product name
                                     </th>
                                     <th>
                                         Quantity

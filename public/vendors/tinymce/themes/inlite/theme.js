@@ -81,7 +81,7 @@ var defineGlobal = function (id, ref) {
   define(id, [], function () { return ref; });
 };
 /*jsc
-["tinymce.themes.inlite.Theme","tinymce.core.ThemeManager","tinymce.core.ui.Api","tinymce.core.util.Delay","tinymce.themes.inlite.alien.Arr","tinymce.themes.inlite.alien.EditorSettings","tinymce.themes.inlite.core.ElementMatcher","tinymce.themes.inlite.core.Matcher","tinymce.themes.inlite.core.PredicateId","tinymce.themes.inlite.core.SelectionMatcher","tinymce.themes.inlite.core.SkinLoader","tinymce.themes.inlite.ui.Buttons","tinymce.themes.inlite.ui.Panel","global!tinymce.util.Tools.resolve","tinymce.themes.inlite.alien.Type","tinymce.themes.inlite.core.Measure","tinymce.core.util.Tools","tinymce.core.EditorManager","tinymce.core.dom.DOMUtils","tinymce.core.ui.Factory","tinymce.themes.inlite.ui.Toolbar","tinymce.themes.inlite.ui.Forms","tinymce.themes.inlite.core.Layout","tinymce.themes.inlite.file.Conversions","tinymce.themes.inlite.file.Picker","tinymce.themes.inlite.core.Actions","tinymce.core.geom.Rect","tinymce.themes.inlite.core.Convert","tinymce.core.util.Promise","tinymce.themes.inlite.alien.Uuid","tinymce.themes.inlite.alien.Unlink","tinymce.themes.inlite.core.UrlType","tinymce.themes.inlite.alien.Bookmark","tinymce.core.dom.TreeWalker","tinymce.core.dom.RangeUtils"]
+["tinymce.themes.inlite.Theme","tinymce.core.ThemeManager","tinymce.core.ui.Api","tinymce.core.util.Delay","tinymce.themes.inlite.alien.Arr","tinymce.themes.inlite.alien.EditorSettings","tinymce.themes.inlite.core.ElementMatcher","tinymce.themes.inlite.core.Matcher","tinymce.themes.inlite.core.PredicateId","tinymce.themes.inlite.core.SelectionMatcher","tinymce.themes.inlite.core.SkinLoader","tinymce.themes.inlite.ui.Buttons","tinymce.themes.inlite.ui.Panel","global!tinymce.util.Tools.resolve","tinymce.themes.inlite.alien.type","tinymce.themes.inlite.core.Measure","tinymce.core.util.Tools","tinymce.core.EditorManager","tinymce.core.dom.DOMUtils","tinymce.core.ui.Factory","tinymce.themes.inlite.ui.Toolbar","tinymce.themes.inlite.ui.Forms","tinymce.themes.inlite.core.Layout","tinymce.themes.inlite.file.Conversions","tinymce.themes.inlite.file.Picker","tinymce.themes.inlite.core.Actions","tinymce.core.geom.Rect","tinymce.themes.inlite.core.Convert","tinymce.core.util.Promise","tinymce.themes.inlite.alien.Uuid","tinymce.themes.inlite.alien.Unlink","tinymce.themes.inlite.core.UrlType","tinymce.themes.inlite.alien.Bookmark","tinymce.core.dom.TreeWalker","tinymce.core.dom.RangeUtils"]
 jsc*/
 defineGlobal("global!tinymce.util.Tools.resolve", tinymce.util.Tools.resolve);
 /**
@@ -172,7 +172,7 @@ define(
 );
 
 /**
- * Type.js
+ * type.js
  *
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
@@ -182,7 +182,7 @@ define(
  */
 
 define(
-  'tinymce.themes.inlite.alien.Type',
+  'tinymce.themes.inlite.alien.type',
   [
   ],
   function () {
@@ -231,9 +231,9 @@ define(
 define(
   'tinymce.themes.inlite.alien.EditorSettings',
   [
-    'tinymce.themes.inlite.alien.Type'
+    'tinymce.themes.inlite.alien.type'
   ],
-  function (Type) {
+  function (type) {
     var validDefaultOrDie = function (value, predicate) {
       if (predicate(value)) {
         return true;
@@ -265,11 +265,11 @@ define(
         return value === false ? [] : defaultValue;
       };
 
-      if (Type.isArray(value)) {
+      if (type.isArray(value)) {
         return value;
-      } else if (Type.isString(value)) {
+      } else if (type.isString(value)) {
         return stringToItemsArray(value);
-      } else if (Type.isBoolean(value)) {
+      } else if (type.isBoolean(value)) {
         return boolToItemsArray(value, defaultValue);
       }
 
@@ -286,11 +286,11 @@ define(
 
     return {
       // TODO: Add Option based getString, getBool if merged with core
-      getStringOr: getByTypeOr(Type.isString),
-      getBoolOr: getByTypeOr(Type.isBoolean),
-      getNumberOr: getByTypeOr(Type.isNumber),
-      getHandlerOr: getByTypeOr(Type.isFunction),
-      getToolbarItemsOr: getToolbarItemsOr(Type.isArray)
+      getStringOr: getByTypeOr(type.isString),
+      getBoolOr: getByTypeOr(type.isBoolean),
+      getNumberOr: getByTypeOr(type.isNumber),
+      getHandlerOr: getByTypeOr(type.isFunction),
+      getToolbarItemsOr: getToolbarItemsOr(type.isArray)
     };
   }
 );
@@ -771,9 +771,9 @@ define(
   [
     'tinymce.core.util.Tools',
     'tinymce.core.ui.Factory',
-    'tinymce.themes.inlite.alien.Type'
+    'tinymce.themes.inlite.alien.type'
   ],
-  function (Tools, Factory, Type) {
+  function (Tools, Factory, type) {
     var getSelectorStateResult = function (itemName, item) {
       var result = function (selector, handler) {
         return {
@@ -811,9 +811,9 @@ define(
     };
 
     var itemsToArray = function (items) {
-      if (Type.isArray(items)) {
+      if (type.isArray(items)) {
         return items;
-      } else if (Type.isString(items)) {
+      } else if (type.isString(items)) {
         return items.split(/[ ,]/);
       }
 

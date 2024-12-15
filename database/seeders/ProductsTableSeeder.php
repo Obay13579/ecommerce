@@ -28,7 +28,7 @@
                     'description' => '<div class="ng-scope">
                         <p>Driver: 53mm Neodymium Magnets<br>
                         Frequency Response: 15Hz–25,000 Hz<br>
-                        Connection Type: USB/3.5mm<br>
+                        Connection type: USB/3.5mm<br>
                         Microphone: Detachable<br>
                         Features: 7.1 Virtual Surround Sound<br>
                         Weight: 309g</p>
@@ -581,8 +581,8 @@
                     'name' => 'Razer BlackWidow V3 Pro',
                     'image_name' => '1.jpg',
                     'description' => '<div class="ng-scope">
-                        <p>Type: Mechanical Gaming Keyboard<br>
-                        Switch Type: Razer Green Switches<br>
+                        <p>type: Mechanical Gaming Keyboard<br>
+                        Switch type: Razer Green Switches<br>
                         Connectivity: Wireless (Bluetooth/2.4GHz)<br>
                         Backlight: Chroma RGB Lighting<br>
                         Additional Features: Programmable Macros<br>
@@ -601,8 +601,8 @@
                     'name' => 'Corsair K70 RGB MK.2',
                     'image_name' => '1.jpg',
                     'description' => '<div class="ng-scope">
-                        <p>Type: Mechanical Gaming Keyboard<br>
-                        Switch Type: Cherry MX Red<br>
+                        <p>type: Mechanical Gaming Keyboard<br>
+                        Switch type: Cherry MX Red<br>
                         Connectivity: Wired USB<br>
                         Backlight: per-key RGB Lighting<br>
                         Additional Features: Media Controls, Dedicated Macro Keys<br>
@@ -621,8 +621,8 @@
                     'name' => 'Logitech G915 X',
                     'image_name' => '1.jpg',
                     'description' => '<div class="ng-scope">
-                        <p>Type: Low-Profile Mechanical Gaming Keyboard<br>
-                        Switch Type: GL Tactile<br>
+                        <p>type: Low-Profile Mechanical Gaming Keyboard<br>
+                        Switch type: GL Tactile<br>
                         Connectivity: Wireless (Lightspeed)<br>
                         Backlight: LIGHTSYNC RGB<br>
                         Additional Features: Dedicated Media Controls<br>

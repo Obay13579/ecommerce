@@ -142,7 +142,7 @@ label.error {
                         <h3 class="title">Billing address</h3>
                     </div>
                     <div class="form-group">
-                        <input class="input" type="text" id="name" name="name" placeholder="Full Name">
+                        <input class="input" type="text" id="name" name="name" placeholder="Full name">
                     </div>
                     <div class="form-group">
                         <input class="input" type="email" name="email" id="email" placeholder="Email" onkeyup="myFunction()">

@@ -414,7 +414,7 @@
 				var headers = '';
 				// since jQuery 1.9 responseText type has to match contentType
 				if (mockHandler.contentType) {
-					mockHandler.headers['Content-Type'] = mockHandler.contentType;
+					mockHandler.headers['Content-type'] = mockHandler.contentType;
 				}
 				$.each(mockHandler.headers, function(k, v) {
 					headers += k + ': ' + v + '\n';

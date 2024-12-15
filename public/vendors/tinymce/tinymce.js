@@ -82,7 +82,7 @@ var defineGlobal = function (id, ref) {
   define(id, [], function () { return ref; });
 };
 /*jsc
-["tinymce.core.api.Main","tinymce.core.api.Tinymce","tinymce.core.Register","tinymce.core.geom.Rect","tinymce.core.util.Promise","tinymce.core.util.Delay","tinymce.core.Env","tinymce.core.dom.EventUtils","tinymce.core.dom.Sizzle","tinymce.core.util.Tools","tinymce.core.dom.DomQuery","tinymce.core.html.Styles","tinymce.core.dom.TreeWalker","tinymce.core.html.Entities","tinymce.core.dom.DOMUtils","tinymce.core.dom.ScriptLoader","tinymce.core.AddOnManager","tinymce.core.dom.RangeUtils","tinymce.core.html.Node","tinymce.core.html.Schema","tinymce.core.html.SaxParser","tinymce.core.html.DomParser","tinymce.core.html.Writer","tinymce.core.html.Serializer","tinymce.core.dom.Serializer","tinymce.core.util.VK","tinymce.core.dom.ControlSelection","tinymce.core.dom.BookmarkManager","tinymce.core.dom.Selection","tinymce.core.Formatter","tinymce.core.UndoManager","tinymce.core.EditorCommands","tinymce.core.util.URI","tinymce.core.util.Class","tinymce.core.util.EventDispatcher","tinymce.core.util.Observable","tinymce.core.WindowManager","tinymce.core.NotificationManager","tinymce.core.EditorObservable","tinymce.core.Shortcuts","tinymce.core.Editor","tinymce.core.util.I18n","tinymce.core.FocusManager","tinymce.core.EditorManager","tinymce.core.util.XHR","tinymce.core.util.JSON","tinymce.core.util.JSONRequest","tinymce.core.util.JSONP","tinymce.core.util.LocalStorage","tinymce.core.api.Compat","tinymce.core.util.Color","tinymce.core.ui.Api","tinymce.core.util.Arr","tinymce.core.dom.Range","tinymce.core.dom.StyleSheetLoader","tinymce.core.dom.NodeType","tinymce.core.caret.CaretContainer","tinymce.core.text.Zwsp","ephox.katamari.api.Fun","tinymce.core.dom.RangePoint","tinymce.core.caret.CaretBookmark","tinymce.core.caret.CaretPosition","ephox.sugar.api.dom.Compare","ephox.sugar.api.node.Element","tinymce.core.dom.ScrollIntoView","tinymce.core.dom.TridentSelection","tinymce.core.selection.FragmentReader","tinymce.core.dom.ElementUtils","tinymce.core.util.Fun","tinymce.core.fmt.Preview","tinymce.core.fmt.Hooks","tinymce.core.undo.Levels","tinymce.core.delete.DeleteCommands","tinymce.core.InsertContent","global!document","tinymce.core.ui.Window","tinymce.core.ui.MessageBox","tinymce.core.ui.Notification","tinymce.core.EditorSettings","tinymce.core.init.Render","tinymce.core.Mode","tinymce.core.ui.Sidebar","tinymce.core.util.Uuid","tinymce.core.ErrorReporter","tinymce.core.LegacyInput","tinymce.core.ui.Selector","tinymce.core.ui.Collection","tinymce.core.ui.ReflowQueue","tinymce.core.ui.Control","tinymce.core.ui.Factory","tinymce.core.ui.KeyboardNavigation","tinymce.core.ui.Container","tinymce.core.ui.DragHelper","tinymce.core.ui.Scrollable","tinymce.core.ui.Panel","tinymce.core.ui.Movable","tinymce.core.ui.Resizable","tinymce.core.ui.FloatPanel","tinymce.core.ui.Tooltip","tinymce.core.ui.Widget","tinymce.core.ui.Progress","tinymce.core.ui.Layout","tinymce.core.ui.AbsoluteLayout","tinymce.core.ui.Button","tinymce.core.ui.ButtonGroup","tinymce.core.ui.Checkbox","tinymce.core.ui.ComboBox","tinymce.core.ui.ColorBox","tinymce.core.ui.PanelButton","tinymce.core.ui.ColorButton","tinymce.core.ui.ColorPicker","tinymce.core.ui.Path","tinymce.core.ui.ElementPath","tinymce.core.ui.FormItem","tinymce.core.ui.Form","tinymce.core.ui.FieldSet","tinymce.core.ui.FilePicker","tinymce.core.ui.FitLayout","tinymce.core.ui.FlexLayout","tinymce.core.ui.FlowLayout","tinymce.core.ui.FormatControls","tinymce.core.ui.GridLayout","tinymce.core.ui.Iframe","tinymce.core.ui.InfoBox","tinymce.core.ui.Label","tinymce.core.ui.Toolbar","tinymce.core.ui.MenuBar","tinymce.core.ui.MenuButton","tinymce.core.ui.MenuItem","tinymce.core.ui.Throbber","tinymce.core.ui.Menu","tinymce.core.ui.ListBox","tinymce.core.ui.Radio","tinymce.core.ui.ResizeHandle","tinymce.core.ui.SelectBox","tinymce.core.ui.Slider","tinymce.core.ui.Spacer","tinymce.core.ui.SplitButton","tinymce.core.ui.StackLayout","tinymce.core.ui.TabPanel","tinymce.core.ui.TextBox","ephox.katamari.api.Arr","global!Array","global!Error","ephox.katamari.api.Future","ephox.katamari.api.Futures","ephox.katamari.api.Result","tinymce.core.geom.ClientRect","tinymce.core.caret.CaretCandidate","tinymce.core.text.ExtendingChar","ephox.sand.api.Node","ephox.sand.api.PlatformDetection","ephox.sugar.api.search.Selectors","global!console","ephox.sugar.api.dom.Insert","ephox.sugar.api.dom.Replication","ephox.sugar.api.node.Fragment","ephox.sugar.api.node.Node","tinymce.core.dom.ElementType","tinymce.core.dom.Parents","tinymce.core.selection.SelectionUtils","tinymce.core.undo.Fragments","tinymce.core.delete.BlockBoundaryDelete","tinymce.core.delete.BlockRangeDelete","tinymce.core.delete.CefDelete","tinymce.core.delete.InlineBoundaryDelete","tinymce.core.caret.CaretWalker","tinymce.core.dom.RangeNormalizer","tinymce.core.InsertList","tinymce.core.data.ObservableObject","tinymce.core.ui.DomUtils","tinymce.core.ui.BoxUtils","tinymce.core.ui.ClassList","global!window","tinymce.core.init.Init","tinymce.core.PluginManager","tinymce.core.ThemeManager","tinymce.core.content.LinkTargets","tinymce.core.fmt.FontInfo","ephox.katamari.api.Option","global!String","ephox.katamari.api.LazyValue","ephox.katamari.async.Bounce","ephox.katamari.async.AsyncValues","ephox.sand.util.Global","ephox.katamari.api.Thunk","ephox.sand.core.PlatformDetection","global!navigator","ephox.sugar.api.node.NodeTypes","ephox.sugar.api.search.Traverse","ephox.sugar.api.properties.Attr","ephox.sugar.api.dom.InsertAll","ephox.sugar.api.dom.Remove","ephox.katamari.api.Options","tinymce.core.undo.Diff","tinymce.core.delete.BlockBoundary","tinymce.core.delete.MergeBlocks","tinymce.core.delete.DeleteUtils","tinymce.core.caret.CaretUtils","tinymce.core.delete.CefDeleteAction","tinymce.core.delete.DeleteElement","tinymce.core.caret.CaretFinder","tinymce.core.keyboard.BoundaryCaret","tinymce.core.keyboard.BoundaryLocation","tinymce.core.keyboard.BoundarySelection","tinymce.core.keyboard.InlineUtils","tinymce.core.data.Binding","tinymce.core.init.InitContentBody","global!Object","global!setTimeout","ephox.katamari.api.Resolve","ephox.sand.core.Browser","ephox.sand.core.OperatingSystem","ephox.sand.detect.DeviceType","ephox.sand.detect.UaString","ephox.sand.info.PlatformInfo","ephox.katamari.api.Type","ephox.katamari.api.Struct","ephox.sugar.alien.Recurse","ephox.katamari.api.Obj","ephox.sugar.api.search.PredicateFind","tinymce.core.dom.Empty","ephox.katamari.api.Adt","tinymce.core.text.Bidi","tinymce.core.caret.CaretContainerInline","tinymce.core.caret.CaretContainerRemove","tinymce.core.util.LazyEvaluator","ephox.katamari.api.Cell","tinymce.core.caret.CaretContainerInput","tinymce.core.EditorUpload","tinymce.core.ForceBlocks","tinymce.core.keyboard.KeyboardOverrides","tinymce.core.NodeChange","tinymce.core.SelectionOverrides","tinymce.core.util.Quirks","ephox.katamari.api.Global","ephox.sand.detect.Version","ephox.katamari.api.Strings","ephox.katamari.data.Immutable","ephox.katamari.data.MixedBag","ephox.sugar.api.node.Body","ephox.sugar.impl.ClosestOrAncestor","ephox.sugar.api.search.SelectorExists","tinymce.core.file.Uploader","tinymce.core.file.ImageScanner","tinymce.core.file.BlobCache","tinymce.core.file.UploadStatus","tinymce.core.keyboard.ArrowKeys","tinymce.core.keyboard.DeleteBackspaceKeys","tinymce.core.keyboard.EnterKey","tinymce.core.keyboard.SpaceKey","tinymce.core.caret.FakeCaret","tinymce.core.caret.LineUtils","tinymce.core.DragDropOverrides","tinymce.core.EditorView","tinymce.core.keyboard.CefUtils","tinymce.core.dom.NodePath","global!Number","ephox.katamari.str.StrAppend","ephox.katamari.str.StringParts","ephox.katamari.util.BagUtils","ephox.sugar.api.search.SelectorFind","tinymce.core.file.Conversions","global!URL","tinymce.core.keyboard.CefNavigation","tinymce.core.keyboard.MatchKeys","tinymce.core.keyboard.InsertSpace","tinymce.core.dom.Dimensions","tinymce.core.dom.MousePosition","ephox.sugar.api.properties.Css","tinymce.core.caret.LineWalker","ephox.katamari.api.Merger","ephox.sugar.impl.Style"]
+["tinymce.core.api.Main","tinymce.core.api.Tinymce","tinymce.core.Register","tinymce.core.geom.Rect","tinymce.core.util.Promise","tinymce.core.util.Delay","tinymce.core.Env","tinymce.core.dom.EventUtils","tinymce.core.dom.Sizzle","tinymce.core.util.Tools","tinymce.core.dom.DomQuery","tinymce.core.html.Styles","tinymce.core.dom.TreeWalker","tinymce.core.html.Entities","tinymce.core.dom.DOMUtils","tinymce.core.dom.ScriptLoader","tinymce.core.AddOnManager","tinymce.core.dom.RangeUtils","tinymce.core.html.Node","tinymce.core.html.Schema","tinymce.core.html.SaxParser","tinymce.core.html.DomParser","tinymce.core.html.Writer","tinymce.core.html.Serializer","tinymce.core.dom.Serializer","tinymce.core.util.VK","tinymce.core.dom.ControlSelection","tinymce.core.dom.BookmarkManager","tinymce.core.dom.Selection","tinymce.core.Formatter","tinymce.core.UndoManager","tinymce.core.EditorCommands","tinymce.core.util.URI","tinymce.core.util.Class","tinymce.core.util.EventDispatcher","tinymce.core.util.Observable","tinymce.core.WindowManager","tinymce.core.NotificationManager","tinymce.core.EditorObservable","tinymce.core.Shortcuts","tinymce.core.Editor","tinymce.core.util.I18n","tinymce.core.FocusManager","tinymce.core.EditorManager","tinymce.core.util.XHR","tinymce.core.util.JSON","tinymce.core.util.JSONRequest","tinymce.core.util.JSONP","tinymce.core.util.LocalStorage","tinymce.core.api.Compat","tinymce.core.util.Color","tinymce.core.ui.Api","tinymce.core.util.Arr","tinymce.core.dom.Range","tinymce.core.dom.StyleSheetLoader","tinymce.core.dom.NodeType","tinymce.core.caret.CaretContainer","tinymce.core.text.Zwsp","ephox.katamari.api.Fun","tinymce.core.dom.RangePoint","tinymce.core.caret.CaretBookmark","tinymce.core.caret.CaretPosition","ephox.sugar.api.dom.Compare","ephox.sugar.api.node.Element","tinymce.core.dom.ScrollIntoView","tinymce.core.dom.TridentSelection","tinymce.core.selection.FragmentReader","tinymce.core.dom.ElementUtils","tinymce.core.util.Fun","tinymce.core.fmt.Preview","tinymce.core.fmt.Hooks","tinymce.core.undo.Levels","tinymce.core.delete.DeleteCommands","tinymce.core.InsertContent","global!document","tinymce.core.ui.Window","tinymce.core.ui.MessageBox","tinymce.core.ui.Notification","tinymce.core.EditorSettings","tinymce.core.init.Render","tinymce.core.Mode","tinymce.core.ui.Sidebar","tinymce.core.util.Uuid","tinymce.core.ErrorReporter","tinymce.core.LegacyInput","tinymce.core.ui.Selector","tinymce.core.ui.Collection","tinymce.core.ui.ReflowQueue","tinymce.core.ui.Control","tinymce.core.ui.Factory","tinymce.core.ui.KeyboardNavigation","tinymce.core.ui.Container","tinymce.core.ui.DragHelper","tinymce.core.ui.Scrollable","tinymce.core.ui.Panel","tinymce.core.ui.Movable","tinymce.core.ui.Resizable","tinymce.core.ui.FloatPanel","tinymce.core.ui.Tooltip","tinymce.core.ui.Widget","tinymce.core.ui.Progress","tinymce.core.ui.Layout","tinymce.core.ui.AbsoluteLayout","tinymce.core.ui.Button","tinymce.core.ui.ButtonGroup","tinymce.core.ui.Checkbox","tinymce.core.ui.ComboBox","tinymce.core.ui.ColorBox","tinymce.core.ui.PanelButton","tinymce.core.ui.ColorButton","tinymce.core.ui.ColorPicker","tinymce.core.ui.Path","tinymce.core.ui.ElementPath","tinymce.core.ui.FormItem","tinymce.core.ui.Form","tinymce.core.ui.FieldSet","tinymce.core.ui.FilePicker","tinymce.core.ui.FitLayout","tinymce.core.ui.FlexLayout","tinymce.core.ui.FlowLayout","tinymce.core.ui.FormatControls","tinymce.core.ui.GridLayout","tinymce.core.ui.Iframe","tinymce.core.ui.InfoBox","tinymce.core.ui.Label","tinymce.core.ui.Toolbar","tinymce.core.ui.MenuBar","tinymce.core.ui.MenuButton","tinymce.core.ui.MenuItem","tinymce.core.ui.Throbber","tinymce.core.ui.Menu","tinymce.core.ui.ListBox","tinymce.core.ui.Radio","tinymce.core.ui.ResizeHandle","tinymce.core.ui.SelectBox","tinymce.core.ui.Slider","tinymce.core.ui.Spacer","tinymce.core.ui.SplitButton","tinymce.core.ui.StackLayout","tinymce.core.ui.TabPanel","tinymce.core.ui.TextBox","ephox.katamari.api.Arr","global!Array","global!Error","ephox.katamari.api.Future","ephox.katamari.api.Futures","ephox.katamari.api.Result","tinymce.core.geom.ClientRect","tinymce.core.caret.CaretCandidate","tinymce.core.text.ExtendingChar","ephox.sand.api.Node","ephox.sand.api.PlatformDetection","ephox.sugar.api.search.Selectors","global!console","ephox.sugar.api.dom.Insert","ephox.sugar.api.dom.Replication","ephox.sugar.api.node.Fragment","ephox.sugar.api.node.Node","tinymce.core.dom.ElementType","tinymce.core.dom.Parents","tinymce.core.selection.SelectionUtils","tinymce.core.undo.Fragments","tinymce.core.delete.BlockBoundaryDelete","tinymce.core.delete.BlockRangeDelete","tinymce.core.delete.CefDelete","tinymce.core.delete.InlineBoundaryDelete","tinymce.core.caret.CaretWalker","tinymce.core.dom.RangeNormalizer","tinymce.core.InsertList","tinymce.core.data.ObservableObject","tinymce.core.ui.DomUtils","tinymce.core.ui.BoxUtils","tinymce.core.ui.ClassList","global!window","tinymce.core.init.Init","tinymce.core.PluginManager","tinymce.core.ThemeManager","tinymce.core.content.LinkTargets","tinymce.core.fmt.FontInfo","ephox.katamari.api.Option","global!String","ephox.katamari.api.LazyValue","ephox.katamari.async.Bounce","ephox.katamari.async.AsyncValues","ephox.sand.util.Global","ephox.katamari.api.Thunk","ephox.sand.core.PlatformDetection","global!navigator","ephox.sugar.api.node.NodeTypes","ephox.sugar.api.search.Traverse","ephox.sugar.api.properties.Attr","ephox.sugar.api.dom.InsertAll","ephox.sugar.api.dom.Remove","ephox.katamari.api.Options","tinymce.core.undo.Diff","tinymce.core.delete.BlockBoundary","tinymce.core.delete.MergeBlocks","tinymce.core.delete.DeleteUtils","tinymce.core.caret.CaretUtils","tinymce.core.delete.CefDeleteAction","tinymce.core.delete.DeleteElement","tinymce.core.caret.CaretFinder","tinymce.core.keyboard.BoundaryCaret","tinymce.core.keyboard.BoundaryLocation","tinymce.core.keyboard.BoundarySelection","tinymce.core.keyboard.InlineUtils","tinymce.core.data.Binding","tinymce.core.init.InitContentBody","global!Object","global!setTimeout","ephox.katamari.api.Resolve","ephox.sand.core.Browser","ephox.sand.core.OperatingSystem","ephox.sand.detect.DeviceType","ephox.sand.detect.UaString","ephox.sand.info.PlatformInfo","ephox.katamari.api.type","ephox.katamari.api.Struct","ephox.sugar.alien.Recurse","ephox.katamari.api.Obj","ephox.sugar.api.search.PredicateFind","tinymce.core.dom.Empty","ephox.katamari.api.Adt","tinymce.core.text.Bidi","tinymce.core.caret.CaretContainerInline","tinymce.core.caret.CaretContainerRemove","tinymce.core.util.LazyEvaluator","ephox.katamari.api.Cell","tinymce.core.caret.CaretContainerInput","tinymce.core.EditorUpload","tinymce.core.ForceBlocks","tinymce.core.keyboard.KeyboardOverrides","tinymce.core.NodeChange","tinymce.core.SelectionOverrides","tinymce.core.util.Quirks","ephox.katamari.api.Global","ephox.sand.detect.Version","ephox.katamari.api.Strings","ephox.katamari.data.Immutable","ephox.katamari.data.MixedBag","ephox.sugar.api.node.Body","ephox.sugar.impl.ClosestOrAncestor","ephox.sugar.api.search.SelectorExists","tinymce.core.file.Uploader","tinymce.core.file.ImageScanner","tinymce.core.file.BlobCache","tinymce.core.file.UploadStatus","tinymce.core.keyboard.ArrowKeys","tinymce.core.keyboard.DeleteBackspaceKeys","tinymce.core.keyboard.EnterKey","tinymce.core.keyboard.SpaceKey","tinymce.core.caret.FakeCaret","tinymce.core.caret.LineUtils","tinymce.core.DragDropOverrides","tinymce.core.EditorView","tinymce.core.keyboard.CefUtils","tinymce.core.dom.NodePath","global!Number","ephox.katamari.str.StrAppend","ephox.katamari.str.StringParts","ephox.katamari.util.BagUtils","ephox.sugar.api.search.SelectorFind","tinymce.core.file.Conversions","global!URL","tinymce.core.keyboard.CefNavigation","tinymce.core.keyboard.MatchKeys","tinymce.core.keyboard.InsertSpace","tinymce.core.dom.Dimensions","tinymce.core.dom.MousePosition","ephox.sugar.api.properties.Css","tinymce.core.caret.LineWalker","ephox.katamari.api.Merger","ephox.sugar.impl.Style"]
 jsc*/
 /**
  * Rect.js
@@ -1195,7 +1195,7 @@ define(
        *
        * @method bind
        * @param {Object} target Target node/window or custom object.
-       * @param {String} names Name of the event to bind.
+       * @param {String} names name of the event to bind.
        * @param {function} callback Callback function to execute when the event occurs.
        * @param {Object} scope Scope to call the callback function on, defaults to target.
        * @return {function} Callback function that got bound.
@@ -3793,7 +3793,7 @@ define(
      * @param {Array/String} items Items to make map out of.
      * @param {String} delim Optional delimiter to split string by.
      * @param {Object} map Optional map to add items to.
-     * @return {Object} Name/value map of items.
+     * @return {Object} name/value map of items.
      */
     function makeMap(items, delim, map) {
       var i;
@@ -4556,7 +4556,7 @@ define(
        * Sets/gets attributes on the elements in the current set.
        *
        * @method attr
-       * @param {String/Object} name Name of attribute to get or an object with attributes to set.
+       * @param {String/Object} name name of attribute to get or an object with attributes to set.
        * @param {String} value Optional value to set.
        * @return {tinymce.dom.DomQuery/String} Current set or the specified attribute when only the name is specified.
        */
@@ -4613,7 +4613,7 @@ define(
        * Removes attributse on the elements in the current set.
        *
        * @method removeAttr
-       * @param {String/Object} name Name of attribute to remove.
+       * @param {String/Object} name name of attribute to remove.
        * @return {tinymce.dom.DomQuery/String} Current set.
        */
       removeAttr: function (name) {
@@ -4624,7 +4624,7 @@ define(
        * Sets/gets properties on the elements in the current set.
        *
        * @method attr
-       * @param {String/Object} name Name of property to get or an object with properties to set.
+       * @param {String/Object} name name of property to get or an object with properties to set.
        * @param {String} value Optional value to set.
        * @return {tinymce.dom.DomQuery/String} Current set or the specified property when only the name is specified.
        */
@@ -4658,7 +4658,7 @@ define(
        * Sets/gets styles on the elements in the current set.
        *
        * @method css
-       * @param {String/Object} name Name of style to get or an object with styles to set.
+       * @param {String/Object} name name of style to get or an object with styles to set.
        * @param {String} value Optional value to set.
        * @return {tinymce.dom.DomQuery/String} Current set or the specified style when only the name is specified.
        */
@@ -5092,7 +5092,7 @@ define(
        * Binds an event with callback function to the elements in set.
        *
        * @method on
-       * @param {String} name Name of the event to bind.
+       * @param {String} name name of the event to bind.
        * @param {function} callback Callback function to execute when the event occurs.
        * @return {tinymce.dom.DomQuery} Current set.
        */
@@ -5120,7 +5120,7 @@ define(
        * Triggers the specified event by name or event object.
        *
        * @method trigger
-       * @param {String/Object} name Name of the event to trigger or event object.
+       * @param {String/Object} name name of the event to trigger or event object.
        * @return {tinymce.dom.DomQuery} Current set.
        */
       trigger: function (name) {
@@ -8910,7 +8910,7 @@ define(
      *
      * @constructor
      * @method Schema
-     * @param {Object} settings Name/value settings object.
+     * @param {Object} settings name/value settings object.
      */
     return function (settings) {
       var self = this, elements = {}, children = {}, patternElements = [], validStyles, invalidStyles, schemaItems;
@@ -9335,7 +9335,7 @@ define(
       }
 
       /**
-       * Name/value map object with valid parents and children to those parents.
+       * name/value map object with valid parents and children to those parents.
        *
        * @example
        * children = {
@@ -9347,7 +9347,7 @@ define(
       self.children = children;
 
       /**
-       * Name/value map object with valid styles for each element.
+       * name/value map object with valid styles for each element.
        *
        * @method getValidStyles
        * @type Object
@@ -9357,7 +9357,7 @@ define(
       };
 
       /**
-       * Name/value map object with valid styles for each element.
+       * name/value map object with valid styles for each element.
        *
        * @method getInvalidStyles
        * @type Object
@@ -9367,7 +9367,7 @@ define(
       };
 
       /**
-       * Name/value map object with valid classes for each element.
+       * name/value map object with valid classes for each element.
        *
        * @method getValidClasses
        * @type Object
@@ -9380,7 +9380,7 @@ define(
        * Returns a map with boolean attributes.
        *
        * @method getBoolAttrs
-       * @return {Object} Name/value lookup map for boolean attributes.
+       * @return {Object} name/value lookup map for boolean attributes.
        */
       self.getBoolAttrs = function () {
         return boolAttrMap;
@@ -9390,7 +9390,7 @@ define(
        * Returns a map with block elements.
        *
        * @method getBlockElements
-       * @return {Object} Name/value lookup map for block elements.
+       * @return {Object} name/value lookup map for block elements.
        */
       self.getBlockElements = function () {
         return blockElementsMap;
@@ -9400,7 +9400,7 @@ define(
        * Returns a map with text block elements. Such as: p,h1-h6,div,address
        *
        * @method getTextBlockElements
-       * @return {Object} Name/value lookup map for block elements.
+       * @return {Object} name/value lookup map for block elements.
        */
       self.getTextBlockElements = function () {
         return textBlockElementsMap;
@@ -9410,7 +9410,7 @@ define(
        * Returns a map of inline text format nodes for example strong/span or ins.
        *
        * @method getTextInlineElements
-       * @return {Object} Name/value lookup map for text format elements.
+       * @return {Object} name/value lookup map for text format elements.
        */
       self.getTextInlineElements = function () {
         return textInlineElementsMap;
@@ -9420,7 +9420,7 @@ define(
        * Returns a map with short ended elements such as BR or IMG.
        *
        * @method getShortEndedElements
-       * @return {Object} Name/value lookup map for short ended elements.
+       * @return {Object} name/value lookup map for short ended elements.
        */
       self.getShortEndedElements = function () {
         return shortEndedElementsMap;
@@ -9430,7 +9430,7 @@ define(
        * Returns a map with self closing tags such as <li>.
        *
        * @method getSelfClosingElements
-       * @return {Object} Name/value lookup map for self closing tags elements.
+       * @return {Object} name/value lookup map for self closing tags elements.
        */
       self.getSelfClosingElements = function () {
         return selfClosingElementsMap;
@@ -9441,7 +9441,7 @@ define(
        * content in them or not such as TD, VIDEO or IMG.
        *
        * @method getNonEmptyElements
-       * @return {Object} Name/value lookup map for non empty elements.
+       * @return {Object} name/value lookup map for non empty elements.
        */
       self.getNonEmptyElements = function () {
         return nonEmptyElementsMap;
@@ -9452,7 +9452,7 @@ define(
        * pressed
        *
        * @method getMoveCaretBeforeOnEnterElements
-       * @return {Object} Name/value lookup map for elements to place the caret in front of.
+       * @return {Object} name/value lookup map for elements to place the caret in front of.
        */
       self.getMoveCaretBeforeOnEnterElements = function () {
         return moveCaretBeforeOnEnterElementsMap;
@@ -9462,7 +9462,7 @@ define(
        * Returns a map with elements where white space is to be preserved like PRE or SCRIPT.
        *
        * @method getWhiteSpaceElements
-       * @return {Object} Name/value lookup map for white space elements.
+       * @return {Object} name/value lookup map for white space elements.
        */
       self.getWhiteSpaceElements = function () {
         return whiteSpaceElementsMap;
@@ -9474,7 +9474,7 @@ define(
        * are regexps used to find the end of the element.
        *
        * @method getSpecialElements
-       * @return {Object} Name/value lookup map for special elements.
+       * @return {Object} name/value lookup map for special elements.
        */
       self.getSpecialElements = function () {
         return specialElements;
@@ -9500,7 +9500,7 @@ define(
        * valid according to the schema.
        *
        * @method isValid
-       * @param {String} name Name of element to check.
+       * @param {String} name name of element to check.
        * @param {String} attr Optional attribute name to check for.
        * @return {Boolean} True/false if the element and attribute is valid.
        */
@@ -9548,7 +9548,7 @@ define(
        * Returns an map object of all custom elements.
        *
        * @method getCustomElements
-       * @return {Object} Name/value map object of all custom elements.
+       * @return {Object} name/value map object of all custom elements.
        */
       self.getCustomElements = function () {
         return customElementsMap;
@@ -10120,7 +10120,7 @@ define(
        *
        * @method add
        * @param {String/Element/Array} parentElm Element id string, DOM node element or array of ids or elements to add to.
-       * @param {String/Element} name Name of new element to add or existing element to add.
+       * @param {String/Element} name name of new element to add or existing element to add.
        * @param {Object} attrs Optional object collection with arguments to add to the new element(s).
        * @param {String} html Optional inner HTML contents to add for each element.
        * @param {Boolean} create Optional flag if the element should be created or added.
@@ -10155,7 +10155,7 @@ define(
        * Creates a new element.
        *
        * @method create
-       * @param {String} name Name of new element.
+       * @param {String} name name of new element.
        * @param {Object} attrs Optional object name/value collection with element attributes.
        * @param {String} html Optional HTML string to set as inner HTML of the element.
        * @return {Element} HTML DOM node element that got created.
@@ -10172,7 +10172,7 @@ define(
        * Creates HTML string for element. The element will be closed unless an empty inner HTML string is passed in.
        *
        * @method createHTML
-       * @param {String} name Name of new element.
+       * @param {String} name name of new element.
        * @param {Object} attrs Optional object name/value collection with element attributes.
        * @param {String} html Optional HTML string to set as inner HTML of the element.
        * @return {String} String with new HTML element, for example: <a href="#">test</a>.
@@ -10267,7 +10267,7 @@ define(
        *
        * @method setStyle
        * @param {String/Element/Array} elm HTML element/Array of elements to set CSS style value on.
-       * @param {String} name Name of the style value to set.
+       * @param {String} name name of the style value to set.
        * @param {String} value Value to set on the style.
        * @example
        * // Sets a style value on all paragraphs in the currently active editor
@@ -10317,7 +10317,7 @@ define(
        *
        * @method setStyles
        * @param {Element/String/Array} elm DOM element, element id string or array of elements/ids to set styles on.
-       * @param {Object} styles Name/Value collection of style items to add to the element(s).
+       * @param {Object} styles name/Value collection of style items to add to the element(s).
        * @example
        * // Sets styles on all paragraphs in the currently active editor
        * tinymce.activeEditor.dom.setStyles(tinymce.activeEditor.dom.select('p'), {'background-color': 'red', 'color': 'green'});
@@ -10353,7 +10353,7 @@ define(
        *
        * @method setAttrib
        * @param {Element/String/Array} elm DOM element, element id string or array of elements/ids to set attribute on.
-       * @param {String} name Name of attribute to set.
+       * @param {String} name name of attribute to set.
        * @param {String} value Value to set on the attribute - if this value is falsy like null, 0 or '' it will remove
        * the attribute instead.
        * @example
@@ -10398,7 +10398,7 @@ define(
        *
        * @method setAttribs
        * @param {Element/String/Array} elm DOM element, element id string or array of elements/ids to set attributes on.
-       * @param {Object} attrs Name/Value collection of attribute items to add to the element(s).
+       * @param {Object} attrs name/Value collection of attribute items to add to the element(s).
        * @example
        * // Sets class and title attributes on all paragraphs in the active editor
        * tinymce.activeEditor.dom.setAttribs(tinymce.activeEditor.dom.select('p'), {'class': 'myclass', title: 'some title'});
@@ -10421,7 +10421,7 @@ define(
        *
        * @method getAttrib
        * @param {String/Element} elm Element string id or DOM element to get attribute from.
-       * @param {String} name Name of attribute to get.
+       * @param {String} name name of attribute to get.
        * @param {String} defaultVal Optional default value to return if the attribute didn't exist.
        * @return {String} Attribute value string, default value or null if the attribute wasn't found.
        */
@@ -10909,7 +10909,7 @@ define(
        *
        * @method rename
        * @param {Element} elm Element to rename.
-       * @param {String} name Name of the new element.
+       * @param {String} name name of the new element.
        * @return {Element} New element or the old element if it needed renaming.
        */
       rename: function (elm, name) {
@@ -11265,7 +11265,7 @@ define(
        * @method bind
        * @param {Element/Document/Window/Array} target Target element to bind events to.
        * handler to or an array of elements/ids/documents.
-       * @param {String} name Name of event handler to add, for example: click.
+       * @param {String} name name of event handler to add, for example: click.
        * @param {function} func Function to execute when the event occurs.
        * @param {Object} scope Optional scope to execute the function in.
        * @return {function} Function callback handler the same as the one passed in.
@@ -11335,7 +11335,7 @@ define(
        *
        * @method fire
        * @param {Node/Document/Window} target Target element or object to fire event on.
-       * @param {String} name Name of the event to fire.
+       * @param {String} name name of the event to fire.
        * @param {Object} evt Event object to send.
        * @return {Event} Event object.
        */
@@ -12547,7 +12547,7 @@ define(
          *
          * @private
          * @param {Node} node Node to collect siblings from.
-         * @param {String} name Name of the sibling to check for.
+         * @param {String} name name of the sibling to check for.
          * @param {Node} endNode
          * @return {Array} Array of collected siblings.
          */
@@ -13163,7 +13163,7 @@ define(
      *
      * @constructor
      * @method Node
-     * @param {String} name Name of the node type.
+     * @param {String} name name of the node type.
      * @param {Number} type Numeric type representing the node.
      */
     function Node(name, type) {
@@ -13462,7 +13462,7 @@ define(
        * Get all children by name.
        *
        * @method getAll
-       * @param {String} name Name of the child nodes to collect.
+       * @param {String} name name of the child nodes to collect.
        * @return {Array} Array with child nodes matchin the specified name.
        */
       getAll: function (name) {
@@ -13514,8 +13514,8 @@ define(
        * @example
        * node.isEmpty({img: true});
        * @method isEmpty
-       * @param {Object} elements Name/value object with elements that are automatically treated as non empty elements.
-       * @param {Object} whitespace Name/value object with elements that are automatically treated whitespace preservables.
+       * @param {Object} elements name/value object with elements that are automatically treated as non empty elements.
+       * @param {Object} whitespace name/value object with elements that are automatically treated whitespace preservables.
        * @return {Boolean} true/false if the node is empty or not.
        */
       isEmpty: function (elements, whitespace) {
@@ -13583,8 +13583,8 @@ define(
      *
      * @static
      * @method create
-     * @param {String} name Name of the node type to create for example "b" or "#text".
-     * @param {Object} attrs Name/value collection of attributes that will be applied to elements.
+     * @param {String} name name of the node type to create for example "b" or "#text".
+     * @param {Object} attrs name/value collection of attributes that will be applied to elements.
      */
     Node.create = function (name, attrs) {
       var node, attrName;
@@ -13720,7 +13720,7 @@ define(
      *
      * @constructor
      * @method SaxParser
-     * @param {Object} settings Name/value collection of settings. comment, cdata, text, start and end are callbacks.
+     * @param {Object} settings name/value collection of settings. comment, cdata, text, start and end are callbacks.
      * @param {tinymce.html.Schema} schema HTML Schema class to use when parsing.
      */
     function SaxParser(settings, schema) {
@@ -14156,7 +14156,7 @@ define(
      *
      * @constructor
      * @method DomParser
-     * @param {Object} settings Name/value collection of settings. comment, cdata, text, start and end are callbacks.
+     * @param {Object} settings name/value collection of settings. comment, cdata, text, start and end are callbacks.
      * @param {tinymce.html.Schema} schema HTML Schema class to use when parsing.
      */
     return function (settings, schema) {
@@ -15034,7 +15034,7 @@ define(
      *
      * @constructor
      * @method Writer
-     * @param {Object} settings Name/value settings object.
+     * @param {Object} settings name/value settings object.
      */
     return function (settings) {
       var html = [], indent, indentBefore, indentAfter, encode, htmlOutput;
@@ -15051,7 +15051,7 @@ define(
          * Writes the a start element such as <p id="a">.
          *
          * @method start
-         * @param {String} name Name of the element.
+         * @param {String} name name of the element.
          * @param {Array} attrs Optional attribute array or undefined if it hasn't any.
          * @param {Boolean} empty Optional empty state if the tag should end like <br />.
          */
@@ -15094,7 +15094,7 @@ define(
          * Writes the a end element such as </p>.
          *
          * @method end
-         * @param {String} name Name of the element.
+         * @param {String} name name of the element.
          */
         end: function (name) {
           var value;
@@ -15154,7 +15154,7 @@ define(
          * Writes a PI node such as <?xml attr="value" ?>.
          *
          * @method pi
-         * @param {String} name Name of the pi.
+         * @param {String} name name of the pi.
          * @param {String} text String to write out inside the pi.
          */
         pi: function (name, text) {
@@ -15232,7 +15232,7 @@ define(
      *
      * @constructor
      * @method Serializer
-     * @param {Object} settings Name/value settings object.
+     * @param {Object} settings name/value settings object.
      * @param {tinymce.html.Schema} schema Schema instance to use.
      */
     return function (settings, schema) {
@@ -16148,7 +16148,7 @@ define(
 
       // Details about each resize handle how to scale etc
       resizeHandles = {
-        // Name: x multiplier, y multiplier, delta size x, delta size y
+        // name: x multiplier, y multiplier, delta size x, delta size y
         /*n: [0.5, 0, 0, -1],
         e: [1, 0.5, 1, 0],
         s: [0.5, 1, 0, 1],
@@ -19711,7 +19711,7 @@ define(
 );
 
 define(
-  'ephox.katamari.api.Type',
+  'ephox.katamari.api.type',
 
   [
     'global!Array',
@@ -19905,11 +19905,11 @@ define(
 
   [
     'ephox.katamari.api.Arr',
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'global!Error'
   ],
 
-  function (Arr, Type, Error) {
+  function (Arr, type, Error) {
     var sort = function (arr) {
       return arr.slice(0).sort();
     };
@@ -19923,9 +19923,9 @@ define(
     };
 
     var validateStrArr = function (label, array) {
-      if (!Type.isArray(array)) throw new Error('The ' + label + ' fields must be an array. Was: ' + array + '.');
+      if (!type.isArray(array)) throw new Error('The ' + label + ' fields must be an array. Was: ' + array + '.');
       Arr.each(array, function (a) {
-        if (!Type.isString(a)) throw new Error('The value ' + a + ' in the ' + label + ' fields was not a string.');
+        if (!type.isString(a)) throw new Error('The value ' + a + ' in the ' + label + ' fields was not a string.');
       });
     };
 
@@ -20064,7 +20064,7 @@ define(
   'ephox.sugar.api.search.Traverse',
 
   [
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'ephox.katamari.api.Arr',
     'ephox.katamari.api.Fun',
     'ephox.katamari.api.Option',
@@ -20074,7 +20074,7 @@ define(
     'ephox.sugar.api.node.Element'
   ],
 
-  function (Type, Arr, Fun, Option, Struct, Recurse, Compare, Element) {
+  function (type, Arr, Fun, Option, Struct, Recurse, Compare, Element) {
     // The document associated with the current element
     var owner = function (element) {
       return Element.fromDom(element.dom().ownerDocument);
@@ -20109,7 +20109,7 @@ define(
     };
 
     var parents = function (element, isRoot) {
-      var stop = Type.isFunction(isRoot) ? isRoot : Fun.constant(false);
+      var stop = type.isFunction(isRoot) ? isRoot : Fun.constant(false);
 
       // This is used a *lot* so it needs to be performant, not recursive
       var dom = element.dom();
@@ -20322,7 +20322,7 @@ define(
   'ephox.sugar.api.properties.Attr',
 
   [
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'ephox.katamari.api.Arr',
     'ephox.katamari.api.Obj',
     'ephox.sugar.api.node.Node',
@@ -20334,14 +20334,14 @@ define(
    * Direct attribute manipulation has been around since IE8, but
    * was apparently unstable until IE10.
    */
-  function (Type, Arr, Obj, Node, Error, console) {
+  function (type, Arr, Obj, Node, Error, console) {
     var rawSet = function (dom, key, value) {
       /*
        * JQuery coerced everything to a string, and silently did nothing on text node/null/undefined.
        *
        * We fail on those invalid cases, only allowing numbers and booleans.
        */
-      if (Type.isString(value) || Type.isBoolean(value) || Type.isNumber(value)) {
+      if (type.isString(value) || type.isBoolean(value) || type.isNumber(value)) {
         dom.setAttribute(key, value + '');
       } else {
         console.error('Invalid call to Attr.set. Key ', key, ':: Value ', value, ':: Element ', dom);
@@ -21999,7 +21999,7 @@ define(
          *
          * @private
          * @param {Node} node Node to get attributes from.
-         * @return {Object} Name/value object with attributes and attribute values.
+         * @return {Object} name/value object with attributes and attribute values.
          */
         function getAttribs(node) {
           var attribs = {};
@@ -22810,7 +22810,7 @@ define(
        * Registers a specific format by name.
        *
        * @method register
-       * @param {Object/String} name Name of the format for example "bold".
+       * @param {Object/String} name name of the format for example "bold".
        * @param {Object/Array} format Optional format object or array of format variants
        * can only be omitted if the first arg is an object.
        */
@@ -22862,7 +22862,7 @@ define(
        * Unregister a specific format by name.
        *
        * @method unregister
-       * @param {String} name Name of the format for example "bold".
+       * @param {String} name name of the format for example "bold".
        */
       function unregister(name) {
         if (name && formats[name]) {
@@ -22913,7 +22913,7 @@ define(
        * Applies the specified format to the current selection or specified node.
        *
        * @method apply
-       * @param {String} name Name of format to apply.
+       * @param {String} name name of format to apply.
        * @param {Object} vars Optional list of variables to replace within format before applying it.
        * @param {Node} node Optional node to apply the format to defaults to current selection.
        */
@@ -23333,7 +23333,7 @@ define(
        * Removes the specified format from the current selection or specified node.
        *
        * @method remove
-       * @param {String} name Name of format to remove.
+       * @param {String} name name of format to remove.
        * @param {Object} vars Optional list of variables to replace within format before removing it.
        * @param {Node/Range} node Optional node or DOM range to remove the format from defaults to current selection.
        */
@@ -23596,7 +23596,7 @@ define(
        * Toggles the specified format on/off.
        *
        * @method toggle
-       * @param {String} name Name of format to apply/remove.
+       * @param {String} name name of format to apply/remove.
        * @param {Object} vars Optional list of variables to replace within format before applying/removing it.
        * @param {Node} node Optional node to apply the format to or remove from. Defaults to current selection.
        */
@@ -23670,7 +23670,7 @@ define(
           for (i = 0; i < formatList.length; i++) {
             format = formatList[i];
 
-            // Name name, attributes, styles and classes
+            // name name, attributes, styles and classes
             if (matchName(node, format) && matchItems(node, format, 'attributes') && matchItems(node, format, 'styles')) {
               // Match classes
               if ((classes = format.classes)) {
@@ -23691,7 +23691,7 @@ define(
        * Matches the current selection or specified node against the specified format name.
        *
        * @method match
-       * @param {String} name Name of format to match.
+       * @param {String} name name of format to match.
        * @param {Object} vars Optional list of variables to replace before checking it.
        * @param {Node} node Optional node to check.
        * @return {boolean} true/false if the specified selection/node matches the format.
@@ -23745,7 +23745,7 @@ define(
        * Matches the current selection against the array of formats and returns a new array with matching formats.
        *
        * @method matchAll
-       * @param {Array} names Name of format to match.
+       * @param {Array} names name of format to match.
        * @param {Object} vars Optional list of variables to replace before checking it.
        * @return {Array} Array with matched formats.
        */
@@ -23775,7 +23775,7 @@ define(
        * will currently only check the state for selector formats, it returns true on all other format types.
        *
        * @method canApply
-       * @param {String} name Name of format to check.
+       * @param {String} name name of format to check.
        * @return {boolean} true/false if the specified format can be applied to the current selection/node.
        */
       function canApply(name) {
@@ -24042,7 +24042,7 @@ define(
        *
        * @private
        * @param {String} value Value to replace variables in.
-       * @param {Object} vars Name/value array with variables to replace.
+       * @param {Object} vars name/value array with variables to replace.
        * @return {String} New value with replaced variables.
        */
       function replaceVars(value, vars) {
@@ -24442,7 +24442,7 @@ define(
        *
        * @private
        * @param {Object} format Format object with items to remove from node.
-       * @param {Object} vars Name/value object with variables to apply to format.
+       * @param {Object} vars name/value object with variables to apply to format.
        * @param {Node} node Node to remove the format styles on.
        * @param {Node} compareNode Optional compare node, if specified the styles will be compared to that node.
        * @return {Boolean} True/false if the node was removed or not.
@@ -25860,15 +25860,15 @@ define(
   'ephox.sugar.impl.ClosestOrAncestor',
 
   [
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'ephox.katamari.api.Option'
   ],
 
-  function (Type, Option) {
+  function (type, Option) {
     return function (is, ancestor, scope, a, isRoot) {
       return is(scope, a) ?
               Option.some(scope) :
-              Type.isFunction(isRoot) && isRoot(scope) ?
+              type.isFunction(isRoot) && isRoot(scope) ?
                   Option.none() :
                   ancestor(scope, a, isRoot);
     };
@@ -25878,7 +25878,7 @@ define(
   'ephox.sugar.api.search.PredicateFind',
 
   [
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'ephox.katamari.api.Arr',
     'ephox.katamari.api.Fun',
     'ephox.katamari.api.Option',
@@ -25888,14 +25888,14 @@ define(
     'ephox.sugar.impl.ClosestOrAncestor'
   ],
 
-  function (Type, Arr, Fun, Option, Body, Compare, Element, ClosestOrAncestor) {
+  function (type, Arr, Fun, Option, Body, Compare, Element, ClosestOrAncestor) {
     var first = function (predicate) {
       return descendant(Body.body(), predicate);
     };
 
     var ancestor = function (scope, predicate, isRoot) {
       var element = scope.dom();
-      var stop = Type.isFunction(isRoot) ? isRoot : Fun.constant(false);
+      var stop = type.isFunction(isRoot) ? isRoot : Fun.constant(false);
 
       while (element.parentNode) {
         element = element.parentNode;
@@ -27148,20 +27148,20 @@ define(
   [
     'ephox.katamari.api.Arr',
     'ephox.katamari.api.Obj',
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'global!Array',
     'global!Error',
     'global!console'
   ],
 
-  function (Arr, Obj, Type, Array, Error, console) {
+  function (Arr, Obj, type, Array, Error, console) {
     /*
      * Generates a church encoded ADT (https://en.wikipedia.org/wiki/Church_encoding)
      * For syntax and use, look at the test code.
      */
     var generate = function (cases) {
       // validation
-      if (!Type.isArray(cases)) {
+      if (!type.isArray(cases)) {
         throw new Error('cases must be an array');
       }
       if (cases.length === 0) {
@@ -27188,7 +27188,7 @@ define(
           throw new Error('duplicate key detected:' + key);
         } else if (key === 'cata') {
           throw new Error('cannot have a case named cata (sorry)');
-        } else if (!Type.isArray(value)) {
+        } else if (!type.isArray(value)) {
           // this implicitly checks if acase is an object
           throw new Error('case arguments must be an array');
         }
@@ -29533,7 +29533,7 @@ define(
        * Adds commands to the command collection.
        *
        * @method addCommands
-       * @param {Object} commandList Name/value collection with commands to add, the names can also be comma separated.
+       * @param {Object} commandList name/value collection with commands to add, the names can also be comma separated.
        * @param {String} type Optional type to add, defaults to exec. Can be value or state as well.
        */
       function addCommands(commandList, type) {
@@ -30777,7 +30777,7 @@ define(
        * Fires the specified event by name.
        *
        * @method fire
-       * @param {String} name Name of the event to fire.
+       * @param {String} name name of the event to fire.
        * @param {Object?} args Event arguments.
        * @return {Object} Event args instance passed in.
        * @example
@@ -30903,7 +30903,7 @@ define(
        * Unbinds an event listener to a specific event by name.
        *
        * @method off
-       * @param {String?} name Name of the event to unbind.
+       * @param {String?} name name of the event to unbind.
        * @param {callback?} callback Callback to unbind.
        * @return {Object} Current class instance.
        * @example
@@ -30990,7 +30990,7 @@ define(
        * Returns true/false if the dispatcher has a event of the specified name.
        *
        * @method has
-       * @param {String} name Name of the event to check for.
+       * @param {String} name name of the event to check for.
        * @return {Boolean} true/false if the event exists or not.
        */
       function has(name) {
@@ -31010,7 +31010,7 @@ define(
      * Returns true/false if the specified event name is a native browser event or not.
      *
      * @method isNative
-     * @param {String} name Name to check if it's native.
+     * @param {String} name name to check if it's native.
      * @return {Boolean} true/false if the event is native or not.
      * @static
      */
@@ -31064,7 +31064,7 @@ define(
        * <a href="/docs/advanced/events">event reference</a> for more details on each event.
        *
        * @method fire
-       * @param {String} name Name of the event to fire.
+       * @param {String} name name of the event to fire.
        * @param {Object?} args Event arguments.
        * @param {Boolean?} bubble True/false if the event is to be bubbled.
        * @return {Object} Event args instance passed in.
@@ -31116,7 +31116,7 @@ define(
        * <a href="/docs/advanced/events">event reference</a> for more details on each event.
        *
        * @method off
-       * @param {String?} name Name of the event to unbind.
+       * @param {String?} name name of the event to unbind.
        * @param {callback?} callback Callback to unbind.
        * @return {Object} Current class instance.
        * @example
@@ -31138,7 +31138,7 @@ define(
        * <a href="/docs/advanced/events">event reference</a> for more details on each event.
        *
        * @method once
-       * @param {String} name Name of the event to bind.
+       * @param {String} name name of the event to bind.
        * @param {callback} callback Callback to bind only once.
        * @return {Object} Current class instance.
        */
@@ -31150,7 +31150,7 @@ define(
        * Returns true/false if the object has a event of the specified name.
        *
        * @method hasEventListeners
-       * @param {String} name Name of the event to check for.
+       * @param {String} name name of the event to check for.
        * @return {Boolean} true/false if the event exists or not.
        */
       hasEventListeners: function (name) {
@@ -31197,7 +31197,7 @@ define(
      *
      * @method create
      * @param {tinymce.data.ObservableObject} model Model to create binding to.
-     * @param {String} name Name of property to bind.
+     * @param {String} name name of property to bind.
      * @return {tinymce.data.Binding} Binding instance.
      */
     Binding.create = function (model, name) {
@@ -31358,7 +31358,7 @@ define(
        * observers if the value is a change from the current value.
        *
        * @method set
-       * @param {String/object} name Name of the property to set or a object of items to set.
+       * @param {String/object} name name of the property to set or a object of items to set.
        * @param {Object} value Value to set for the property.
        * @return {tinymce.data.ObservableObject} Observable object instance.
        */
@@ -31398,7 +31398,7 @@ define(
        * Gets a property by name.
        *
        * @method get
-       * @param {String} name Name of the property to get.
+       * @param {String} name name of the property to get.
        * @return {Object} Object value of propery.
        */
       get: function (name) {
@@ -31409,7 +31409,7 @@ define(
        * Returns true/false if the specified property exists.
        *
        * @method has
-       * @param {String} name Name of the property to check for.
+       * @param {String} name name of the property to check for.
        * @return {Boolean} true/false if the item exists.
        */
       has: function (name) {
@@ -31421,7 +31421,7 @@ define(
        * it possible to sync the state of two properties in two ObservableObject instances.
        *
        * @method bind
-       * @param {String} name Name of the property to sync with the property it's inserted to.
+       * @param {String} name name of the property to sync with the property it's inserted to.
        * @return {tinymce.data.Binding} Data binding instance.
        */
       bind: function (name) {
@@ -32065,7 +32065,7 @@ define(
        *
        * @example collection.exec("myMethod", arg1, arg2, arg3);
        * @method exec
-       * @param {String} name Name of the function to execute.
+       * @param {String} name name of the function to execute.
        * @param {Object} ... Multiple arguments to pass to each function.
        * @return {tinymce.ui.Collection} Current collection.
        */
@@ -32128,7 +32128,7 @@ define(
        * bound event handlers.
        *
        * @method fire
-       * @param {String} name Name of the event to fire.
+       * @param {String} name name of the event to fire.
        * @param {Object} args Optional arguments to pass to the event.
        * @return {tinymce.ui.Collection} Current collection instance.
        */
@@ -32142,7 +32142,7 @@ define(
        * the second one will be the event object either the browsers native event object or a custom JS object.
        *
        * @method on
-       * @param {String} name Name of the event to bind. For example "click".
+       * @param {String} name name of the event to bind. For example "click".
        * @param {String/function} callback Callback function to execute ones the event occurs.
        * @return {tinymce.ui.Collection} Current collection instance.
        */
@@ -32793,7 +32793,7 @@ define(
        * Constructs a new control instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {String} style Style CSS properties to add.
        * @setting {String} border Border box values example: 1 1 1 1
        * @setting {String} padding Padding box values example: 1 1 1 1
@@ -32804,7 +32804,7 @@ define(
        * @setting {String} role WAI-ARIA role to use for control.
        * @setting {Boolean} hidden Is the control hidden by default.
        * @setting {Boolean} disabled Is the control disabled by default.
-       * @setting {String} name Name of the control instance.
+       * @setting {String} name name of the control instance.
        */
       init: function (settings) {
         var self = this, classes, defaultClasses;
@@ -32869,7 +32869,7 @@ define(
         });
 
         /**
-         * Name/value object with settings for the current control.
+         * name/value object with settings for the current control.
          *
          * @field {Object} settings
          */
@@ -33190,7 +33190,7 @@ define(
        * The callback function will be passed a DOM event like object that enables yout do stop propagation.
        *
        * @method on
-       * @param {String} name Name of the event to bind. For example "click".
+       * @param {String} name name of the event to bind. For example "click".
        * @param {String/function} callback Callback function to execute ones the event occurs.
        * @return {tinymce.ui.Control} Current control object.
        */
@@ -33237,7 +33237,7 @@ define(
        * by the specified name will be removed.
        *
        * @method off
-       * @param {String} [name] Name for the event to unbind.
+       * @param {String} [name] name for the event to unbind.
        * @param {function} [callback] Callback function to unbind.
        * @return {tinymce.ui.Control} Current control object.
        */
@@ -33251,7 +33251,7 @@ define(
        * bound event handlers.
        *
        * @method fire
-       * @param {String} name Name of the event to fire.
+       * @param {String} name name of the event to fire.
        * @param {Object} [args] Arguments to pass to the event.
        * @param {Boolean} [bubble] Value to control bubbling. Defaults to true.
        * @return {Object} Current arguments object.
@@ -33283,7 +33283,7 @@ define(
        * Returns true/false if the specified event has any listeners.
        *
        * @method hasEventListeners
-       * @param {String} name Name of the event to check for.
+       * @param {String} name name of the event to check for.
        * @return {Boolean} True/false state if the event has listeners.
        */
       hasEventListeners: function (name) {
@@ -33429,7 +33429,7 @@ define(
        * Sets the specified aria property.
        *
        * @method aria
-       * @param {String} name Name of the aria property to set.
+       * @param {String} name name of the aria property to set.
        * @param {String} value Value of the aria property.
        * @return {tinymce.ui.Control} Current control instance.
        */
@@ -34070,7 +34070,7 @@ define(
        * Adds a new control instance type to the factory.
        *
        * @method add
-       * @param {String} type Type name for example "button".
+       * @param {String} type type name for example "button".
        * @param {function} typeClass Class type function.
        */
       add: function (type, typeClass) {
@@ -34081,7 +34081,7 @@ define(
        * Returns true/false if the specified type exists or not.
        *
        * @method has
-       * @param {String} type Type to look for.
+       * @param {String} type type to look for.
        * @return {Boolean} true/false if the control by name exists.
        */
       has: function (type) {
@@ -34100,7 +34100,7 @@ define(
        * });
        *
        * @method create
-       * @param {Object/String} settings Name/Value object with items used to create the type.
+       * @param {Object/String} settings name/Value object with items used to create the type.
        * @return {tinymce.ui.Control} Control instance based on the specified type.
        */
       create: function (type, settings) {
@@ -34223,7 +34223,7 @@ define(
        * Returns a wai aria property by name for example aria-selected.
        *
        * @private
-       * @param {String} name Name of the aria property to get for example "disabled".
+       * @param {String} name name of the aria property to get for example "disabled".
        * @return {String} Aria property value.
        */
       function getAriaProp(name) {
@@ -34599,7 +34599,7 @@ define(
        * Constructs a new control instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Array} items Items to add to container in JSON format or control instances.
        * @setting {String} layout Layout manager by name to use.
        * @setting {Object} defaults Default settings to apply to all items.
@@ -34787,7 +34787,7 @@ define(
           if (item) {
             // Construct item if needed
             if (!(item instanceof Control)) {
-              // Name only then convert it to an object
+              // name only then convert it to an object
               if (typeof item == "string") {
                 item = { type: item };
               }
@@ -35911,7 +35911,7 @@ define(
        * Constructs a new control instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Boolean} autohide Automatically hide the panel.
        */
       init: function (settings) {
@@ -36259,7 +36259,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         var self = this;
@@ -36640,7 +36640,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         settings = {
@@ -36705,7 +36705,7 @@ define(
          *
          * @static
          * @method msgBox
-         * @param {Object} settings Name/value object with settings.
+         * @param {Object} settings name/value object with settings.
          */
         msgBox: function (settings) {
           var buttons, callback = settings.callback || function () { };
@@ -37074,7 +37074,7 @@ define(
        * var dialogArguments = top.tinymce.activeEditor.windowManager.getParams();
        *
        * @method getParams
-       * @return {Object} Name/value object with parameters passed from windowManager.open call.
+       * @return {Object} name/value object with parameters passed from windowManager.open call.
        */
       self.getParams = function () {
         return getTopMostWindow() ? getTopMostWindow().params : null;
@@ -37214,7 +37214,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {String} tooltip Tooltip text to display when hovering.
        * @setting {Boolean} autofocus True if the control should be focused when rendered.
        * @setting {String} text Text to display inside widget.
@@ -37833,7 +37833,7 @@ define(
      *
      * @private
      * @param {tinymce.Editor} editor Editor instance to get event target from.
-     * @param {String} eventName Name of the event for example "click".
+     * @param {String} eventName name of the event for example "click".
      * @return {Element/Document} HTML Element or document target to bind on.
      */
     function getEventTarget(editor, eventName) {
@@ -37865,7 +37865,7 @@ define(
      *
      * @private
      * @param {tinymce.Editor} editor Editor instance to get event target from.
-     * @param {String} eventName Name of the event for example "click".
+     * @param {String} eventName name of the event for example "click".
      */
     function bindEventDelegate(editor, eventName) {
       var eventRootElm, delegate;
@@ -40376,19 +40376,19 @@ define(
   'ephox.katamari.api.Merger',
 
   [
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'global!Array',
     'global!Error'
   ],
 
-  function (Type, Array, Error) {
+  function (type, Array, Error) {
 
     var shallow = function (old, nu) {
       return nu;
     };
 
     var deep = function (old, nu) {
-      var bothObjects = Type.isObject(old) && Type.isObject(nu);
+      var bothObjects = type.isObject(old) && type.isObject(nu);
       return bothObjects ? deepMerge(old, nu) : nu;
     };
 
@@ -42232,7 +42232,7 @@ define(
   'ephox.sugar.api.properties.Css',
 
   [
-    'ephox.katamari.api.Type',
+    'ephox.katamari.api.type',
     'ephox.katamari.api.Arr',
     'ephox.katamari.api.Obj',
     'ephox.katamari.api.Option',
@@ -42247,12 +42247,12 @@ define(
     'global!window'
   ],
 
-  function (Type, Arr, Obj, Option, Attr, Body, Element, Node, Style, Strings, Error, console, window) {
+  function (type, Arr, Obj, Option, Attr, Body, Element, Node, Style, Strings, Error, console, window) {
     var internalSet = function (dom, property, value) {
       // This is going to hurt. Apologies.
       // JQuery coerces numbers to pixels for certain property names, and other times lets numbers through.
       // we're going to be explicit; strings only.
-      if (!Type.isString(value)) {
+      if (!type.isString(value)) {
         console.error('Invalid call to CSS.set. Property ', property, ':: Value ', value, ':: Element ', dom);
         throw new Error('CSS value must be a string: ' + value);
       }
@@ -44115,7 +44115,7 @@ define(
             (!next || (next.isAtEnd() && startCaretPos.isEqual(next)));
         }
 
-        // Type over case delete and insert this won't cover typeover with a IME but at least it covers the common case
+        // type over case delete and insert this won't cover typeover with a IME but at least it covers the common case
         editor.on('keypress', function (e) {
           if (!isDefaultPrevented(e) && !selection.isCollapsed() && e.charCode > 31 && !VK.metaKeyPressed(e)) {
             if (isEverythingSelected(editor)) {
@@ -44736,7 +44736,7 @@ define(
         editor.iframeHTML += '<meta http-equiv="X-UA-Compatible" content="IE=7" />';
       }
 
-      editor.iframeHTML += '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
+      editor.iframeHTML += '<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />';
 
       bodyId = settings.body_id || 'tinymce';
       if (bodyId.indexOf('=') != -1) {
@@ -45264,7 +45264,7 @@ define(
       baseUri = editorManager.baseURI;
 
       /**
-       * Name/value collection with editor settings.
+       * name/value collection with editor settings.
        *
        * @property settings
        * @type Object
@@ -45297,7 +45297,7 @@ define(
       self.setDirty(false);
 
       /**
-       * Name/Value object containing plugin instances.
+       * name/Value object containing plugin instances.
        *
        * @property plugins
        * @type Object
@@ -45490,7 +45490,7 @@ define(
        * There new event model is a better way to add callback so this method might be removed in the future.
        *
        * @method execCallback
-       * @param {String} name Name of the callback to execute.
+       * @param {String} name name of the callback to execute.
        * @return {Object} Return value passed from callback function.
        */
       execCallback: function (name) {
@@ -45541,7 +45541,7 @@ define(
        * Returns a language pack item by name/key.
        *
        * @method getLang
-       * @param {String} name Name/key to get from the language pack.
+       * @param {String} name name/key to get from the language pack.
        * @param {String} defaultVal Optional default value to retrieve.
        */
       getLang: function (name, defaultVal) {
@@ -46635,7 +46635,7 @@ define(
        *
        * @method add
        * @param {String} code Language code like sv_SE.
-       * @param {Array} items Name/value array with English en_US to sv_SE.
+       * @param {Array} items name/value array with English en_US to sv_SE.
        */
       add: function (code, items) {
         var langData = data[code];
@@ -47801,7 +47801,7 @@ define(
        *
        * @method addI18n
        * @param {String} code Optional language code.
-       * @param {Object} items Name/value object with translations.
+       * @param {Object} items name/value object with translations.
        */
       addI18n: function (code, items) {
         I18n.add(code, items);
@@ -47932,7 +47932,7 @@ define(
           }
 
           if (settings.content_type) {
-            xhr.setRequestHeader('Content-Type', settings.content_type);
+            xhr.setRequestHeader('Content-type', settings.content_type);
           }
 
           if (settings.requestheaders) {
@@ -48829,7 +48829,7 @@ define(
        * Constructs a layout instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         this.settings = Tools.extend({}, this.Defaults, settings);
@@ -49028,7 +49028,7 @@ define(
        * Constructs a new button instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {String} size Size of the button small|medium|large.
        * @setting {String} image Image to use for icon.
        * @setting {String} icon Icon to use for button.
@@ -49300,7 +49300,7 @@ define(
        * Constructs a new Checkbox instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Boolean} checked True if the checkbox should be checked by default.
        */
       init: function (settings) {
@@ -49458,7 +49458,7 @@ define(
        * Constructs a new control instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {String} placeholder Placeholder text to display.
        */
       init: function (settings) {
@@ -49924,7 +49924,7 @@ define(
        * Constructs a new control instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         var self = this;
@@ -50128,7 +50128,7 @@ define(
        * Constructs a new ColorButton instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         this._super(settings);
@@ -50259,7 +50259,7 @@ define(
        * Constructs a new colorpicker instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {String} color Initial color value.
        */
       init: function (settings) {
@@ -50462,7 +50462,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {String} delimiter Delimiter to display between row in path.
        */
       init: function (settings) {
@@ -51315,7 +51315,7 @@ define(
        * Constructs a new control instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         var self = this, editor = getActiveEditor(), editorSettings = editor.settings;
@@ -52918,7 +52918,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Boolean} multiline Multiline label.
        */
       init: function (settings) {
@@ -53018,7 +53018,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Boolean} multiline Multiline label.
        */
       init: function (settings) {
@@ -53170,7 +53170,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         var self = this;
@@ -53278,7 +53278,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         var self = this;
@@ -53546,7 +53546,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Boolean} selectable Selectable menu.
        * @setting {Array} menu Submenu array with items.
        * @setting {String} shortcut Shortcut to display for menu item. Example: Ctrl+X
@@ -54010,7 +54010,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        */
       init: function (settings) {
         var self = this;
@@ -54199,7 +54199,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Array} values Array with values to add to list box.
        */
       init: function (settings) {
@@ -54494,7 +54494,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Array} options Array with options to add to the select box.
        */
       init: function (settings) {
@@ -55239,7 +55239,7 @@ define(
        * Constructs a instance with the specified settings.
        *
        * @constructor
-       * @param {Object} settings Name/value object with settings.
+       * @param {Object} settings name/value object with settings.
        * @setting {Boolean} multiline True if the textbox is a multiline control.
        * @setting {Number} maxLength Max length for the textbox.
        * @setting {Number} size Size of the textbox in characters.

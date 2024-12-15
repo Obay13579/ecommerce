@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Send the image to your Laravel backend
             const response = await axios.post('/api/ai-search', formData, {
                 headers: {
-                    'Content-Type': 'multipart/form-data',
+                    'Content-type': 'multipart/form-data',
                 },
             });
 

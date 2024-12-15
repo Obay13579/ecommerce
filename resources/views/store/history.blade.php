@@ -11,7 +11,7 @@
                     <thead>
                         <th>Order Id</th>
                         <th>Image </th>
-                        <th>Name</th>
+                        <th>name</th>
                         <th>Quanity</th>
                         <th>Color</th>
                         <th>Status</th>

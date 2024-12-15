@@ -14,7 +14,7 @@
                                         Images
                                     </th>
                                     <th>
-                                        Name
+                                        name
                                     </th>
                                     <th>
                                         Delete

@@ -19,16 +19,15 @@
                     <form class="forms-sample" method="post" id="cat_form">
                         {{csrf_field()}}
                         <div class="form-group row">
-                            <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Name</label>
+                            <label for="exampleInputEmail2" class="col-sm-3 col-form-label">name</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Enter Category Name">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Category name">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Category Type</label>
+                            <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Category type</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="Type" id="Type" placeholder="Enter Category Type">
-                            </div>
+                            <input type="text" class="form-control" name="type" id="type" placeholder="Enter Category type">                            </div>
                         </div>
                         <button type="submit" class="btn btn-success mr-2">Submit</button>
                     </form>
@@ -56,10 +55,10 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        Name
+                                        name
                                     </th>
                                     <th>
-                                        Type
+                                        type
                                     </th>
                                     <th>
                                         Created At
@@ -115,15 +114,15 @@
 		
 		$("#cat_form").validate({
 			rules: {
-				Name: "required",
-				Type: "required",
+				name: "required",
+				type: "required",
 				
 				
 				
 			},
 			messages: {
-				Name: "Category Name is Required",
-				Type: "Category Type is Required",
+				name: "Category name is Required",
+				type: "Category type is Required",
                 	
 			}
 		});

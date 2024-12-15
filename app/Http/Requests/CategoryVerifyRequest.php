@@ -24,8 +24,8 @@ class CategoryVerifyRequest extends FormRequest
     public function rules()
     {
         return [
-            'Name' => 'required|unique:categories|max:50',
-            'Type' => 'required'
+            'name' => 'required|unique:categories|max:50',
+            'type' => 'required'
             
         ];
     }
