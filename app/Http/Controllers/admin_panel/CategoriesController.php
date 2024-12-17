@@ -95,10 +95,6 @@ class categoriesController extends Controller
 
         }
         
-        
-        
-        
-        
         $catToDelete = Category::find($request->id);
         $catToDelete->delete();
 
