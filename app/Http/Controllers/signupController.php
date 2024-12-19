@@ -50,7 +50,7 @@ class signupController extends Controller
             'confirm_password' => 'required|min:5|same:pass'
             ]);
 
-            //dd($validatedData);
+            //dd($validatedData);;
             $u=new User();
             $add=new Address();
             $add->area=$r->address;

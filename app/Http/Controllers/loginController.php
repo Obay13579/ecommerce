@@ -13,7 +13,7 @@ use App\Models\Product;
 use App\Models\Category;
 
 
-class loginController extends Controller
+class LoginController extends Controller
 {
     public function adminIndex()
     {
